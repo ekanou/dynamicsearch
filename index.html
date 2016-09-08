@@ -23,23 +23,29 @@
 <p> Search engine are often used to complete complex information tasks. These tasks cannot be expressed with a single query, may be composed by multiple sub-tasks that need to be completed, the information need of the user may change throughout a task completion effort, learning effects take place, while users may not know exactly what they are looking for or how to formulate their information need. </p>
 
 <h3>
-<a id="dynamic-search" class="anchor" href="#dynamic-search" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dynamic Search</h3>
+<a id="dynamic-search" class="anchor" href="#dynamic-search" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dynamic Search.</h3>
 Information Retrieval research has traditionally focused on serving the best results for a single query— so­called ad hoc retrieval. However, users typically search iteratively, refining and reformulating their queries during a session. A key challenge in the study of this interaction is the creation of suitable evaluation resources to assess the effectiveness of IR systems over sessions.
 <p></p>
 
 <h3>
-<a id="trec-session" class="anchor" href="#trec-session" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TREC Session Track</h3>
-The TREC Session Track, which ran from 2010 through to 2014, had always had two primary goals: (1) to test whether systems can improve their performance for a given query by using previous user interactions with a retrieval system (including previous queries, clicks on ranked results, dwell times, etc.), and (2) to evaluate system performance over an entire query session instead of a single query. However, it only produced test collections to evaluate the first goal, given that the second one required a dynamic test collection, where users react upon the results returned by a retrieval system.
+<a id="trec-session" class="anchor" href="#trec-session" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TREC Session Track.</h3>
+The <a href="http://ir.cis.udel.edu/sessions/">TREC Session Track</a>, which ran from 2010 through to 2014, had always had two primary goals: (1) to test whether systems can improve their performance for a given query by using previous user interactions with a retrieval system (including previous queries, clicks on ranked results, dwell times, etc.), and (2) to evaluate system performance over an entire query session instead of a single query. However, it only produced test collections to evaluate the first goal, given that the second one required a dynamic test collection, where users react upon the results returned by a retrieval system.
 <p></p>
 
 <h3>
-<a id="trec-tasks" class="anchor" href="#trec-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TREC Tasks Track</h3>
-In 2015 the TREC Tasks track was introduced to test whether systems upon a user’s query could understand the underlying information access task and provide documents for all possible subtasks as a way to evaluate the second goal of the Session track. However, this stripped out the task from any user interactions and the dynamics of any such collection.
+<a id="trec-tasks" class="anchor" href="#trec-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TREC Tasks Track.</h3>
+In 2015 the <a href="http://www.cs.ucl.ac.uk/tasks-track-2015/">TREC Tasks track was introduced to test whether systems upon a user’s query could understand the underlying information access task and provide documents for all possible subtasks as a way to evaluate the second goal of the Session track. However, this stripped out the task from any user interactions and the dynamics of any such collection.
 <p></p>
 
 <h3>
 <a id="goals" class="anchor" href="#goals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lab Objectives</h3>
-The present proposal attempts to bridge the two evaluation exercises, with the goal of evaluating system performance over an entire session, keeping the “user” in the loop. The objective of the lab is threefold: (a) to produce the methodology and algorithms that will lead to a dynamic test collection by simulating the users, (b) to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at different stages of a session, and a good overall session, (c) to lead to algorithms that can provide an optimal ranking throughout a session.
+The present proposal attempts to bridge the two evaluation exercises, with the goal of evaluating system performance over an entire session, keeping the “user” in the loop. The objective of the lab is threefold: 
+<ol>
+  <li>to produce the methodology and algorithms that will lead to a dynamic test collection by simulating the users</li>
+  <li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at different stages of a session, and a good overall session</li>
+  <li>to lead to algorithms that can provide an optimal ranking throughout a session.</li>
+</ol>
+
 <p></p>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ekanou/dynamicsearch">Dynamic Search</a> is maintained by <a href="https://github.com/ekanou"> Evangelos Kanoulas</a>.</span>
