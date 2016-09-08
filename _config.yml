@@ -3,7 +3,6 @@ title: Dynamic Search
 email: e.kanoulas@uva.nl
 description: Dynamic Search for Complex Tasks
 baseurl: "/dynamicsearch/" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
 twitter_username: ekanou
 github_username:  ekanou
 
