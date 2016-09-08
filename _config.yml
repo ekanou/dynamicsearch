@@ -2,7 +2,7 @@
 title: Dynamic Search
 email: e.kanoulas@uva.nl
 description: Dynamic Search for Complex Tasks
-baseurl: "/dynamicsearch/" # the subpath of your site, e.g. /blog/
+baseurl: /dynamicsearch/ # the subpath of your site, e.g. /blog/
 twitter_username: ekanou
 github_username:  ekanou
 
