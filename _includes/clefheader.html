@@ -1,5 +1,5 @@
 <!-- Header -->
-<header id="clef-header" class="skel-layers-fixed">
+<header id="header" class="skel-layers-fixed">
     <nav id="nav">
         <ul>
             <li><a href="#Lab Overview">Lab Overview</a></li>
@@ -7,6 +7,11 @@
             <li><a href="#Paper Submission">Paper Submission</a></li>
             <li><a href="#Workshop Schedule">Workshop Schedule</a></li>
             <li><a href="#Important Dates">Important Dates</a></li>
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
         </ul>
     </nav>
 </header>
