@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    
+    {% include /head.html %}
+
+	<body id="top">
+
+        {% include /header.html %}
+        
+        {% include /clefheader.html %}
+
+        {{ content }}
+
+        {% include /footer.html %}
+
+    </body>
+
+</html>
