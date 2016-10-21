@@ -2,11 +2,28 @@
 <header id="header" class="skel-layers-fixed">
     <nav id="nav">
         <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/clef-lab.html">CLEF Dynamic Search Lab</a></li>
+            <!-- <li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
+            <li><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
+            <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+            -->
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
+            <li><a href="#" class="button special">CLEF 2017 Registration</a></li>
+        <\ul>
+    <\nav>
+    <nav id="nav">
+        <ul>
             <li><a href="#Lab Overview">Lab Overview</a></li>
             <li><a href="#Proposed Tasks">Proposed Tasks</a></li>
             <li><a href="#Paper Submission">Paper Submission</a></li>
             <li><a href="#Workshop Schedule">Workshop Schedule</a></li>
             <li><a href="#Important Dates">Important Dates</a></li>
+             <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
             {% for page in site.pages %}
                   {% if page.title %}
                     <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
