@@ -5,10 +5,6 @@
         <ul>
             <li><a href="{{ site.baseurl }}/">Home</a></li>
             <li><a href="{{ site.baseurl }}/clef-lab.html">CLEF Dynamic Search Lab</a></li>
-            <!-- <li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
-            <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
-            -->
             {% for page in site.pages %}
                   {% if page.title %}
                     <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
