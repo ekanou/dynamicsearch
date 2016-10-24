@@ -1128,5 +1128,5 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 0px solid #ccc;
+    border: 1px solid #ccc;
     border-top: none;
