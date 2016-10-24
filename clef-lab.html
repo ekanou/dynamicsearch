@@ -55,6 +55,11 @@ layout: clef-default
                         <h3>Participation</h3>
                         <p>This is the first year that this workshop runs and there are two possible ways to participate:</p>
                         <div id="Submissions">
+                                <script>
+                                        document.getElementById(name).style.display = "block";
+                                        evt.currentTarget.className += " active";
+                                </script>
+                                
                                 <ul class="tab">
                                         <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Papers')" id="defaultOpen">Scientific Papers</a></li>
                                         <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Pilot Task')">Pilot Task</a></li>
