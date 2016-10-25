@@ -51,27 +51,29 @@ layout: clef-default
                                 </ul>
 
                                 <div id="Papers" class="tabcontent">
-                                        <p>We solicit the submission of two types of papers: position papers, and papers describing data collection or living lab opportunities.</p>
-                                        <p><em>Position papers</em> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</p>
-                                        <p><em>Data Papers</em> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</p>
-                                        <p> </div>
+                                        <p>The focus of this year's workshop will be the evaluation of interactive information retrieval algorithms. We solicit the submission of two types of papers: (a) position papers, and (b) data papers.</p>
+					<ol>
+						<li><em>Position papers</em> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</li>
+						<li><em>Data Papers</em> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</li>
+					</ol>
+				</div>
 
                                 <div id="Pilot Task" class="tabcontent">
-                                  <p>Submit a run that simulates query reformulations</p>
-                                  <p> Dataset: TREC 2014 Session Track
-                                  <dl>
-                                    <dt> Input: </dt>
-                                    <dt>
-                                    <ol>
-                                    <li>Task description</li>
-                                    <li>The first query of a user in a session</li>
-                                    <li>The ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
-                                    <li>The set of queries for the same  but from all of the users that tried to complete this task, throughout their sessions</li>
-                                    </ol>
-                                    </dt>
-                                    <dt>Output: Ranking of next user's query.</dt>
-                                    <dt>Evaluation Measure: # of user queries correctly predicted</dt>
-                                  </dl>
+                                  	<p>The focus of this year's pilot task will be the simulation of user's query reformulations. This is the first and hardest step towards constructing dynamic test collections. Ideally one would like to be able to generate query reformulations. However, for the purpose of this workshop the pilot task will focus on predicting which user's query comes next out of a set of user queries on a given topic.</p>
+                                  	<dl>
+					<dt> Dataset: The dataset to be used will be the TREC 2014 Session Track.
+                                    	<dt> Input: </dt>
+                                    	<dt>
+                                    	<ol>
+                                    	<li>Task description</li>
+                                    	<li>The first query of a user in a session</li>
+                                    	<li>The document ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
+                                    	<li>A set of possible queries</li>
+                                    	</ol>
+                                    	</dt>
+                                    	<dt>Output: Ranking of the provided set of queries.</dt>
+                                    	<dt>Evaluation Measure: Precision@1</dt>
+                                  	</dl>
                                 </div>
                         </div>
 			</section>
@@ -106,11 +108,13 @@ layout: clef-default
             	<div class="row">
                     	<h3>Important Dates</h3>
                     	<ul>
-                        <li>Labs registration opens: 4 November 2016</li>
-                        <li>Registration closes: 21 April 2017</li>
-                        <li>Submission of Participant Papers [CEUR-WS]: 26 May 2017</li>
-                        <li>Notification of Acceptance Participant Papers [CEUR-WS]: 16 June 2017</li>
-                        <li>Camera Ready Copy of Participant Papers and Extended Lab Overviews [CEUR-WS] due: 3 July 2017</li>
+                        	<li>Labs registration opens: 4 November 2016</li>
+				<li>Pilot task data release: Beginning of December</li>
+                        	<li>Registration closes: 21 April 2017</li>
+				<li>End of the Evaluation Cycle: 5 May 2017</li>
+                        	<li>Submission of Participant Papers [CEUR-WS]: 26 May 2017</li>
+                        	<li>Notification of Acceptance Participant Papers [CEUR-WS]: 16 June 2017</li>
+                        	<li>Camera Ready Copy of Participant Papers [CEUR-WS]: 3 July 2017</li>
                     	</ul>
             	</div>
         </div>
