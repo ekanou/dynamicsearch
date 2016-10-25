@@ -13,26 +13,31 @@ layout: clef-default
 <!-- Main -->
 <section id="overview" class="wrapper style1">
         <div class="container">
-            <div class="row">
-                <section id="Lab Overview">
-                    <h3>Lab Overview</h3>
-                    <p> Information Retrieval research has traditionally focused on serving the best results for a single query — so-called ad hoc retrieval. However, users typically search iteratively, refining and reformulating their queries during a session. A key challenge in the study of this interaction is the creation of suitable evaluation resources to assess the effectiveness of IR systems over sessions. The TREC Session Track, which ran from 2010 through to 2014, had always had two primary goals: (1) to test whether systems can improve their performance for a given query by using previous user interactions with a retrieval system (including previous queries, clicks on ranked results, dwell times, etc.), and (2) to evaluate system performance over an entire query session instead of a single query. However, it only produced test collections to evaluate  the first goal, given that the second one required a dynamic test collection, where users react upon the results returned by a retrieval system. In 2015 the TREC Tasks track was introduced to test whether systems upon a user’s query could understand the underlying information access task and provide documents for all possible subtasks as a way to evaluate the second goal of the Session track. However, this stripped out the task from any user interactions and the dynamics of any such collection. The present lab attempts to bridge the two evaluation exercises, with the goal of evaluating system performance over an entire session, keeping the “user” in the loop.</p>
-                    <p>The <strong>objective</strong> of the lab is threefold:</p>
-                    <ol>
+            	<div class="row">
+            		<h3>Lab Overview</h3>
+                	<p> Information Retrieval research has traditionally focused on serving the best results for a single query — so-called ad hoc retrieval. However, users typically search iteratively, refining and reformulating their queries during a session. A key challenge in the study of this interaction is the creation of suitable evaluation resources to assess the effectiveness of IR systems over sessions. The TREC Session Track, which ran from 2010 through to 2014, had always had two primary goals: (1) to test whether systems can improve their performance for a given query by using previous user interactions with a retrieval system (including previous queries, clicks on ranked results, dwell times, etc.), and (2) to evaluate system performance over an entire query session instead of a single query. However, it only produced test collections to evaluate  the first goal, given that the second one required a dynamic test collection, where users react upon the results returned by a retrieval system. In 2015 the TREC Tasks track was introduced to test whether systems upon a user’s query could understand the underlying information access task and provide documents for all possible subtasks as a way to evaluate the second goal of the Session track. However, this stripped out the task from any user interactions and the dynamics of any such collection. The present lab attempts to bridge the two evaluation exercises, with the goal of evaluating system performance over an entire session, keeping the “user” in the loop.</p>
+		</div>
+	</div>
+</section>
+
+<section id="objectives" class="wrapper style2">
+        <div class="container">
+            	<div class="row">
+			<h3>Objectives</h3>
+		    	<p>The <strong>objective</strong> of the lab is threefold:</p>
+                    	<ol>
                         <li>to produce the methodology and algorithms that will lead to a <em>dynamic test collection</em> by simulating the users</li>
                         <li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at <em>different stages of a session</em>, and a good ranking for the overall session</li>
                         <li>to develop algorithms that can provide an optimal ranking <em>throughout a user's session</em>.</li>
                     </ol>
-                </section>
-            </div>
-        </div>
+		</div>
+	</div>
 </section>
 
 <section id="participate" class="wrapper style2">
-     <div class="container">
-            <div class="row">        
-                <section id="Participation">
-                        <h3>Participation</h3>
+     	<div class="container">
+            	<div class="row">        
+		 	<h3>Participation</h3>
                         <p>This is the first year that this workshop runs and there are two possible ways to participate:</p>
                         <div id="Submissions">
                                 <ul class="tab">
@@ -64,52 +69,7 @@ layout: clef-default
                                   </dl>
                                 </div>
                         </div>
-                </section>
-            </div>
-        </div>
-</section>
-
-<section id="part" class="wrapper style3">
-	<div class="container">
-            <div class="row"> 
-<ul class="nav nav-tabs">
-	<li class="active"><a data-toggle="tab" href="#papers">Research Papers</a></li>
-	<li><a data-toggle="tab" href="#task">Pilot Task</a></li>
-</ul>
-
-<div class="tab-content">
-	<div id="papers" class="tab-pane fade in active">
-		<h3>Research Papers Submission</h3>
-		<p style="text-align: justify; text-justify: inter-word;">
-		<p>We solicit the submission of two types of papers: position papers, and papers describing data collection or living lab opportunities.</p>
-		<ul class="list-group">
-		<li class="list-group-item" style="text-align: justify; text-justify: inter-word;">
-		<b>Position papers</b> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</li>
-		<li class="list-group-item" style="text-align: justify; text-justify: inter-word;">
-		<b>Data Papers</b> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</li>
-		</ul>
-	</div>
-	<div id="task" class="tab-pane fade">
-		<h3>Dynamic Collection Simulation</h3>
-		<p style="text-align: justify; text-justify: inter-word;">
-		Submit a run that simulates query reformulation
-                <dl>
-			<dt> Dataset: TREC 2014 Session Track </dt>
-			<dt> Input: </dt>
-                        <dt>
-                        <ol>
-                        <li>Task description</li>
-                        <li>The first query of a user in a session</li>
-                        <li>The ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
-                        <li>The set of queries for the same  but from all of the users that tried to complete this task, throughout their sessions</li>
-                        </ol>
-                        </dt>
-                        <dt>Output: Ranking of next user's query.</dt>
-                        <dt>Evaluation Measure: # of user queries correctly predicted</dt>
-		</dl>
-	</div>
-</div>
-		</div>
+            	</div>
 	</div>
 </section>
 	
@@ -137,17 +97,15 @@ layout: clef-default
         
 <section id="dates" class="wrapper style1">            
         <div class="container">
-            <div class="row">
-                <section id="Important Dates">
-                    <h3>Important Dates</h3>
-                    <ul>
+            	<div class="row">
+                    	<h3>Important Dates</h3>
+                    	<ul>
                         <li>Labs registration opens: 4 November 2016</li>
                         <li>Registration closes: 21 April 2017</li>
                         <li>Submission of Participant Papers [CEUR-WS]: 26 May 2017</li>
                         <li>Notification of Acceptance Participant Papers [CEUR-WS]: 16 June 2017</li>
                         <li>Camera Ready Copy of Participant Papers and Extended Lab Overviews [CEUR-WS] due: 3 July 2017</li>
-                    </ul>
-                </section>
-            </div>
+                    	</ul>
+            	</div>
         </div>
 </section>
