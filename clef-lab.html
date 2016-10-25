@@ -49,15 +49,21 @@ layout: clef-default
                                 <div id="Pilot Task" class="tabcontent">
                                   <p>Submit a run that simulates query reformulations</p>
                                   <p> Dataset: TREC 2014 Session Track
-                                  <p> Input: <p>
-                                  <ol>
+                                  <dl>
+                                    <dt> Input: </dt>
+                                    <dt>
+                                    <ol>
                                     <li>Task description</li>
                                     <li>The first query of a user in a session</li>
                                     <li>The ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
                                     <li>The set of queries for the same  but from all of the users that tried to complete this task, throughout their sessions</li>
-                                  </ol>
-                                  <p> Output:</p> Next user's query.
-                                  <p> Evaluation Measure: # of user queries predicted</p>
+                                    </ol>
+                                    </dt>
+                                    <dt>Output:</dt>
+                                    <dd>Ranking of next user's query.</dd>
+                                    <dt>Evaluation Measure:</dt>
+                                    <dd># of user queries predicted</dd>
+                                  </dl>
                                 </div>
                         </div>
                 </section>
