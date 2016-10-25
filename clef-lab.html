@@ -69,177 +69,44 @@ layout: clef-default
         </div>
 </section>
 
-<section class="bg-secondary" id="contributions">
-	<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<h2 class="section-heading">Participate</h2>
-					<hr class="dark">
-					<p class="text-muted"
-						style="text-align: justify; text-justify: inter-word;">This is
-						the first year that this workshop runs and there are two possible
-						ways to participate:</p>
-					<ul class="nav nav-tabs">
-						<li class="active"><a data-toggle="tab" href="#papers">Research
-								Papers</a></li>
-						<li><a data-toggle="tab" href="#task">Pilot Task</a></li>
+<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#papers">Research Papers</a></li>
+	<li><a data-toggle="tab" href="#task">Pilot Task</a></li>
+</ul>
 
-					</ul>
-            				<div class="tab-content">
-						<div id="papers" class="tab-pane fade in active">
-							<h3>Research Papers Submission</h3>
-							<p style="text-align: justify; text-justify: inter-word;">
-								The workshop is <b>open to the submission of papers</b>
-								describing test collections or data sets suitable for early risk
-								prediction, early risk prediction challenges, tasks and
-								evaluation metrics or specific early risk detection solutions.
-								We understand that there are two main classes of early risk
-								prediction:
-							</p>
-							<ul class="list-group">
-								<li class="list-group-item"
-									style="text-align: justify; text-justify: inter-word;"><b>With
-										multiple actors</b>. We include in this category cases where there
-									is an external actor or intervening factor that explicitly
-									causes or stimulates the problem. For instance, sexual
-									offenders use deliberate tactics to contact vulnerable children
-									and engage them in sexual abuse. In such cases, early warning
-									systems need to analyse the interactions between the offender
-									and the victim and, in particular, the language of both.
-									Another example of risk provoked by external actions is
-									terrorist recruitment; there is currently massive online
-									activity aiming at recruiting young people (particularly,
-									teenagers) for joining criminal networks</li>
-								<li class="list-group-item"
-									style="text-align: justify; text-justify: inter-word;"><b>With
-										a single actors</b>. We include in this second category cases
-									where there is no explicit external actor or intervening factor
-									that causes or stimulates the problem, but instead the risk
-									comes “exclusively” from the individual. For instance, a
-									teenager developing depression whose process is not caused or
-									stimulated by any intervention or action made by another
-									individual. Of course, there might be multiple personal or
-									contextual factors that affect (or even cause) this process
-									and, as a matter of fact, this is usually the case. However, as
-									it is notfeasible to have access to sources of data associated
-									to all these external conditions, the only element that can be
-									analysed is the language of the individual.</li>
-							</ul>
-							<p style="text-align: justify; text-justify: inter-word;">The
-								two classes of risks described above might interact one to each
-								other. For instance, individuals suffering from major depression
-								might be more inclined to fall prey to criminal networks. From a
-								technological perspective, different types of tools are likely
-								needed to develop early warning systems for these two types of
-								risks.</p>
-							<p style="text-align: justify; text-justify: inter-word;">Essentially,
-								we look at early risk prediction as a process of sequential
-								evidence accumulation where alerts are made when there is enough
-								evidence about a certain type of risk. For the single actor type
-								of risk, the pieces of evidence could come from the
-								chronological sequence of entries written by a tormented subject
-								in the Social Media. For the multiple actor type of risk, the
-								pieces of evidence could come from a series of messages
-								interchanged by an offender and a victim in a chatroom or online
-								forum.</p>
-							<p style="text-align: justify; text-justify: inter-word;">Notice
-								that we refer to early risk in a general way and the workshop is
-								open to contributions along these lines in any possible
-								application domain.</p>
-							<a href="#dates" class="btn btn-primary btn-xl page-scroll">Important
-								Dates</a>
-						</div>
-						<div id="task" class="tab-pane fade">
-							<h3>Early Detection of Depression</h3>
-							<p style="text-align: justify; text-justify: inter-word;">
-								The second way of participation consists in performing a <b>pilot
-									task on early risk detection of depression</b>. This is an
-								exploratory task on early risk detection of depression. The
-								challenge consists of sequentially processing pieces of evidence
-								and detect early traces of depression as soon as possible. The
-								task is mainly concerned about evaluating Text Mining solutions
-								and, thus, it concentrates on texts written in Social Media.
-								Texts should be processed in the order they were created. In
-								this way, systems that effectively perform this task could be
-								applied to sequentially monitor user interactions in blogs,
-								social networks, or other types of online media.
-							</p>
-							<p style="text-align: justify; text-justify: inter-word;">
-								The test collection for this pilot task is the collection
-								described in <a
-									href="https://citius.usc.es/investigacion/publicacions/listado/a-test-collection-research-depression-language-use">[Losada
-									&amp; Crestani 2016]</a>. It is a collection of writings (posts or
-								comments) from a set of Social Media users. There are two
-								categories of users, depressed and non- depressed, and, for each
-								user, the collection contains a sequence of writings (in
-								chronological order). For each user, his collection of writings
-								has been divided into 10 chunks. The first chunk contains the
-								oldest 10% of the messages, the second chunk contains the second
-								oldest 10%, and so forth.
-							</p>
-							<p style="text-align: justify; text-justify: inter-word;">The
-								task is organized into two different stages:</p>
-							<ul class="list-group">
-
-								<li class="list-group-item"
-									style="text-align: justify; text-justify: inter-word;"><b>Training
-										stage</b>. Initially, the teams that participate in this task will
-									have access to a training stage where we will release the whole
-									history of writings for a set of training users (we will
-									provide all chunks of all training users), and we will indicate
-									what users have explicitly mentioned that they have been
-									diagnosed with depression. The participants can therefore tune
-									their systems with the training data.</li>
-								<li class="list-group-item"
-									style="text-align: justify; text-justify: inter-word;"><b>Test
-										stage.</b> The test stage will consist of 10 sequential releases
-									of data (i.e. done at different dates). The first release will
-									consist of the 1st chunk of data (oldest writings of all test
-									users), the second release will consist of the 2nd chunk of
-									data (second oldest writings of all test users), and so forth.
-									After each release, the participants will have a few days to
-									process the data and, before the next release, each
-									participating system has to choose between two options: a)
-									emitting a decision on the user (i.e. depressed or
-									non-depressed), or b) seeing more chunks. 
-									This choice has to be made for each user in the collection. If the system emits a
-									decision, its decision will be final and it will be evaluated
-									based on the correctness of the system's decision and the
-									number of chunks required to make the decision (using a metric
-									for which the fewer writings required to make the alert, the
-									better). If the system does not emit a decision then it will
-									have access to the next chunk of data, that is it will have
-									access to more writings, but it will have a penalty for a
-									“later emission”).</li>
-							</ul>
-							<p style="text-align: justify; text-justify: inter-word;">
-								Evaluation: The evaluation will take into account not only the
-								correctness of the system's output (i.e. whether or not the user
-								is depressed) but also the delay taken to emit its decision. To
-								meet this aim, we will consider the ERDE metric proposed in <a
-									href="https://citius.usc.es/investigacion/publicacions/listado/a-test-collection-research-depression-language-use">[Losada
-									&amp; Crestani 2016]</a>.
-							</p>
-							
-							<!-- <p style="text-align: justify; text-justify: inter-word;">
-								The participants can use external sources of data to tune their algorithms. 
-								However, the participating systems cannot resort to data obtained from Reddit to enrich their estimations. 
-							</p>
-							-->
-							<p style="text-align: justify; text-justify: inter-word;">Being
-								a pilot task, we expect it to be useful for instigating
-								discussion on how to create evaluation laboratories for early
-								risk prediction: proper size of the data, adequate early risk
-								evaluation metrics, alternative ways to formulate early
-								detection tasks, other possible application domains, etc.</p>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSemmyjxF6M2UUAalWDcwOVbnvGxGEBdyo81jdhAXsabEudYWg/viewform?c=0&w=1" class="btn btn-primary btn-xl page-scroll">Pre-register</a>
-						</div>
-					</div>
-				</div>
-		</div>
+<div class="tab-content">
+	<div id="papers" class="tab-pane fade in active">
+		<h3>Research Papers Submission</h3>
+		<p style="text-align: justify; text-justify: inter-word;">
+		<p>We solicit the submission of two types of papers: position papers, and papers describing data collection or living lab opportunities.</p>
+		<ul class="list-group">
+		<li class="list-group-item" style="text-align: justify; text-justify: inter-word;">
+		<b>Position papers</b> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</li>
+		<li class="list-group-item" style="text-align: justify; text-justify: inter-word;">
+		<b>Data Papers</b> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</li>
+		</ul>
 	</div>
-</section>
-				
+	<div id="task" class="tab-pane fade">
+		<h3>Dynamic Collection Simulation</h3>
+		<p style="text-align: justify; text-justify: inter-word;">
+		Submit a run that simulates query reformulation
+                <dl>
+			<dt> Dataset: TREC 2014 Session Track </dt>
+			<dt> Input: </dt>
+                        <dt>
+                        <ol>
+                        <li>Task description</li>
+                        <li>The first query of a user in a session</li>
+                        <li>The ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
+                        <li>The set of queries for the same  but from all of the users that tried to complete this task, throughout their sessions</li>
+                        </ol>
+                        </dt>
+                        <dt>Output: Ranking of next user's query.</dt>
+                        <dt>Evaluation Measure: # of user queries correctly predicted</dt>
+		</dl>
+	</div>
+</div>
+	
         <!--
         <div class="container">
             <div class="row">
