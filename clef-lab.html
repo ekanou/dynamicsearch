@@ -20,8 +20,8 @@ layout: clef-default
                     <p>The <strong>objective</strong> of the lab is threefold:</p>
                     <ol>
                         <li>to produce the methodology and algorithms that will lead to a <em>dynamic test collection</em> by simulating the users</li>
-                        <li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at <em>different stages of a session</em>, and a good overall session</li>
-                        <li>to lead to algorithms that can provide an optimal ranking <em>throughout a session</em>.</li>
+                        <li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at <em>different stages of a session</em>, and a good ranking for the overall session</li>
+                        <li>to develop algorithms that can provide an optimal ranking <em>throughout a user's session</em>.</li>
                     </ol>
                 </section>
             </div>
@@ -47,11 +47,17 @@ layout: clef-default
                                         <p> </div>
 
                                 <div id="Pilot Task" class="tabcontent">
-                                        <p>Submit a run that simulates query reformulations, given a topic description, a document collection, and a set of relevance judgments. The details are still TBD.</p>
-                                  <ul>
-                                    <li>Test Set: TREC 2014 Session Track</li>
-                                    <li>Evaluation Measure: # of user queries predicted</li>
-                                  </ul>
+                                  <p>Submit a run that simulates query reformulations</p>
+                                  <p> Dataset: TREC 2014 Session Track
+                                  <p> Input: <p>
+                                  <ol>
+                                    <li>Task description</li>
+                                    <li>The first query of a user in a session</li>
+                                    <li>The ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
+                                    <li>The set of queries for the same  but from all of the users that tried to complete this task, throughout their sessions</li>
+                                  </ol>
+                                  <p> Output:</p> Next user's query.
+                                  <p> Evaluation Measure: # of user queries predicted</p>
                                 </div>
                         </div>
                 </section>
