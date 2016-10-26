@@ -49,6 +49,10 @@ layout: clef-default
                                         <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Papers')" id="defaultOpen">Scientific Papers</a></li>
                                         <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Pilot Task')">Pilot Task</a></li>
                                 </ul>
+				<script>
+					// Get the element with id="defaultOpen" and click on it
+					document.getElementById("defaultOpen").click();
+				</script>
 
                                 <div id="Papers" class="tabcontent">
                                         <p>The focus of this year's workshop will be the evaluation of interactive information retrieval algorithms. We solicit the submission of two types of papers: (a) position papers, and (b) data papers.</p>
@@ -118,26 +122,4 @@ layout: clef-default
                     	</ul>
             	</div>
         </div>
-</section>
-
-<section id="Discussion Forum" class="wrapper style1">            
-        <div class="container">
-            	<div class="row">
-                    	<h3>Forum</h3>
-<iframe id="forum_embed"
- src="javascript:void(0)"
- scrolling="no"
- frameborder="0"
- width="900"
- height="700">
-</iframe>
-
-<script type="text/javascript">
- document.getElementById("forum_embed").src =
-  "https://groups.google.com/forum/embed/?place=forum/clef-dynamic-search" +
-  "&showsearch=true&showpopout=true&parenturl=" +
-  encodeURIComponent(window.location.href);
-</script>
-		</div>
-	</div>
 </section>
