@@ -68,12 +68,13 @@ def load_judgements(judgements_file_path):
         line_parts = line.strip().split()
         topic_id = line_parts[0]
         doc_id = line_parts[2]
-        relevance_map[ topic_id + '_' + doc_id] = 1
+        rel_value = line_parts[3]
+        relevance_map[ topic_id + '_' + doc_id] = int(rel_value)
     return relevance_map
 
 def is_doc_rel_to_topic(relevance_map, doc_id, topic_id):
 
-    return relevance_map.get(topic_id + '_' + doc_id, 0)
+    return relevance_map.get(topic_id + '_' + doc_id) >= 1
 
 if __name__ == '__main__':
 
@@ -103,9 +104,9 @@ if __name__ == '__main__':
         for interaction in interaction_list_for_q:
             topic_id = interaction.topic_id
             num_clicks += len(interaction.clicked_list)
-            num_clicks_on_rel += sum([is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.clicked_list])
+            num_clicks_on_rel += [is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.clicked_list].count(True)
             #print interaction.result_list
-            num_rel_in_top_10 += sum([is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.result_list])
+            num_rel_in_top_10 += [is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.result_list].count(True)
         columns_for_query = [q, str(num_issued) , str(num_clicks), str(num_clicks_on_rel), str(num_rel_in_top_10)]
 
         print >> query_stats_file, seperator.join(columns_for_query) + seperator + topic_id
