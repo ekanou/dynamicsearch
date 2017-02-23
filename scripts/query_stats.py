@@ -28,8 +28,6 @@ def load_session_logs(session_logs):
 
     e = xml.etree.ElementTree.parse(session_logs).getroot()
 
-    #query_stats_file = open('query_stats2.txt', 'w')
-
     for ses in e.iter('session'):
         session_id = ses.attrib.get('num')
         for topic in ses.iter('topic'):
@@ -82,12 +80,21 @@ if __name__ == '__main__':
 
     session_logs = data_home + '/sessiontrack2014.xml'
     judgements = data_home + '/judgments.txt'
+    output_path = data_home + '/query_stats.csv'
+
+    print 'Loading Sessions Track 2014 files... '
+    print session_logs
+    print judgements
 
     relevance_map = load_judgements(judgements)
     query_to_interaction_map = load_session_logs(session_logs)
 
     seperator = ';'
-    query_stats_file = open(data_home + 'query_stats.csv', 'w')
+    query_stats_file = open(output_path, 'w')
+
+    print 'Writing query statistics to  ' + output_path
+    print 'Number of Unique Queries: ' + str(len(query_to_interaction_map.keys()))
+
     line_for_query = ''
 
     columns = ['Query', '#issued', '#clicks', '#clicks_on_relevant_items', '#relevant_items_in_top_10', 'topic_id']
