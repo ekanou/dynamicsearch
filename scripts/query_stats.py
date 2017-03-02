@@ -39,7 +39,7 @@ def load_session_logs(session_logs):
             result_list = []
 
             for query in inter.iter('query'):
-                query = query.text
+                query = query.text.strip().lower()
 
             for results_node in inter.iter('results'):
                 result_list = [r.text for r in results_node.iter('clueweb12id') ]
@@ -48,13 +48,15 @@ def load_session_logs(session_logs):
 
             interaction_loaded = Interaction(session_id, topic_id, interaction_id, query, result_list, clicked_list)
             if query in queryToInteractionMap.keys():
-                queryToInteractionMap[query].append(interaction_loaded)
+                queryToInteractionMap[session_id + ';' + interaction_id + ';' + topic_id + ';' + query ].append(interaction_loaded)
             else:
-                queryToInteractionMap[query] = [interaction_loaded]
+                queryToInteractionMap[session_id + ';' + interaction_id + ';' + topic_id + ';' + query] = [interaction_loaded]
 
             num_interactions += 1
 
             #print >> query_stats_file, session_id, topic_id, interaction_id, query, str(result_list), str(clicked_list)
+            if 'kenya recipes' in query:
+                print session_id, topic_id, interaction_id, query
 
 
     return queryToInteractionMap
@@ -97,7 +99,7 @@ if __name__ == '__main__':
 
     line_for_query = ''
 
-    columns = ['Query', '#issued', '#clicks', '#clicks_on_relevant_items', '#relevant_items_in_top_10', 'topic_id']
+    columns = ['Session_Id' , 'Interaction_Id' , 'Topic' , 'Query', '#issued', '#clicks', '#clicks_on_relevant_items', '#relevant_items_in_top_10']
     print >> query_stats_file, seperator.join(columns)
 
     for q in query_to_interaction_map.keys():
@@ -112,11 +114,16 @@ if __name__ == '__main__':
             topic_id = interaction.topic_id
             num_clicks += len(interaction.clicked_list)
             num_clicks_on_rel += [is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.clicked_list].count(True)
-            #print interaction.result_list
             num_rel_in_top_10 += [is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.result_list].count(True)
+            if  'kenya recipes' in q:
+                print q
+                rel = [is_doc_rel_to_topic(relevance_map, doc_id, topic_id) for doc_id in interaction.result_list]
+                print rel.count(True)
         columns_for_query = [q, str(num_issued) , str(num_clicks), str(num_clicks_on_rel), str(num_rel_in_top_10)]
 
-        print >> query_stats_file, seperator.join(columns_for_query) + seperator + topic_id
+        print >> query_stats_file, seperator.join(columns_for_query) + seperator
+        if q == 'kenya recipes':
+            print seperator.join(columns_for_query) + seperator 
 
 
 
