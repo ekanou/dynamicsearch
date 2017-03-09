@@ -45,68 +45,49 @@ layout: clef-default
 	</div>
 </section>
 
-<section id="Participation" class="wrapper style1">
+<section id="Papers" class="wrapper style1">
      	<div class="container">
             	<div class="row">
-			<section>
-		 	<h3>Participation</h3>
-                        <p>This is the first year that this workshop runs and there are two possible ways to participate:</p>
-                        <div id="Submissions">
-                                <div id="Papers">
-                                        <p>The focus of this year's workshop will be the evaluation of interactive information retrieval algorithms. We solicit the submission of two types of papers: (a) position papers, and (b) data papers.</p>
+		<h3>Paper Submission</h3>
+                <p>The focus of this year's workshop will be the evaluation of interactive information retrieval algorithms. We solicit the submission of two types of papers: (a) position papers, and (b) data papers.</p>
 					<ol>
 						<li><em>Position papers</em> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</li>
 						<li><em>Data Papers</em> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</li>
 					</ol>
-				</div>
+		</div>
+	</div>
+</section>
 
-                                <div id="Pilot Task">
-					<p>The focus of this year's pilot task will be the simulation of user's query reformulations. This is the first and hardest step towards constructing dynamic test collections. Ideally one would like to be able to generate query reformulations. However, for the purpose of this workshop the pilot task will focus on predicting which user's query comes next out of a set of user queries on a given topic.</p>
-					<p> The description of the extact task will be available asap.</p>
-					<!---
-                                  	<dl>
-					<dt> Dataset: The dataset to be used will be the TREC 2014 Session Track.
+<section id="Pilot Task" class="wrapper style1">
+     	<div class="container">
+            	<div class="row">
+			<h3>Pilot Task</h3>
+			<p>Task Completion Engines and Autonomous Search Agents are now being developed to help users in acquiring information in order to make a decision and complete a task. At the same time such an Autonomous Search Agent could be used in simulating user queries for the evaluation of dynamic search algorithms.</p>
+
+			<p>Such engines/agents need to work with a user to ascertain their information needs, then perform their own searches to dynamically identify relevant material, which will be useful in completing a particular task. For example, consider the task of organising a wedding. There are many different things that that need to be arranged and ordered, e.g. a venue, flowers, catering, gift list, dresses, car hire, hotels, etc. Finding relevant sites and resources requires numerous searches and filtering through many documents/sites. A search agent could help to expedite the process by finding the relevant sites to visit, while a task completion engine would provide a structured interface to help complete the process.</p>
+
+			<p>In this year's Dynamic Search Task Track, the task is to generate a series of queries that a search agent would issue to a search engine, in order to compile a set of links useful for completing the task at hand. This set might be presented to the user or used for further processing by a task completion engine.</p>
+
+			<p>As a starting point, we will consider how humans source information required to complete such tasks, and use this information as a reference point for our evaluation, i.e. can we develop search agents that can generate queries that are like those posed by humans? Thus the focus of the track will be on query generation and models of querying.
+</p>
+	<!--		
+                    <dl>
+			<dt> Dataset: ClueWeb12B (An API to call a pre-defined retrieval algorithm will be provided to the participants) 
                                     	<dt> Input: </dt>
                                     	<dt>
                                     	<ol>
                                     	<li>Task description</li>
                                     	<li>The first query of a user in a session</li>
-                                    	<li>The document ranking for the first query, the clicks, the dwell times, and the relevance labels</li>
-                                    	<li>A set of possible queries</li>
                                     	</ol>
                                     	</dt>
                                     	<dt>Output: Ranking of the provided set of queries.</dt>
                                     	<dt>Evaluation Measure: Precision@1</dt>
                                   	</dl>
-					-->
-                                </div>
-                        </div>
-			</section>
-            	</div>
+-->
+		</div>
 	</div>
 </section>
-	
-        <!--
-        <div class="container">
-            <div class="row">
-                <section id="Proposed Tasks">
-                    <h3>Proposed Tasks</h3>
-                        <ol>
-                            <dt>Task 1:</dt>
-                            <dd>
-                            Construction of dynamic collections (simulations). The first task will evaluate simulations of user interactions. Simulations can be evaluated against static user logs, or actual users. This is a topic of discussion during the proposed workshop.
-                            </dd>
-                            <dt>Task 2:</dt>
-                            <dd>Session search evaluation. The second task will evaluate proposed metrics both for overall session evaluation, and for step­by­step session evaluation. Metrics should be applied on a reusable test collection, however they can be (meta­) evaluated against an interactive experiment with actual users.
-                            </dd>
-                            <dt> Task 3:</dt>
-                            <dd>Session search. The third task will evaluate retrieval effectiveness on the results of the two previous tasks. This third task can run in a follow­up year of the lab, after Task 1 and Task 2 have established the details of the evaluation framework.
-                            </dd>
-                        </ol>
-                </section>
-            </div>
-        </div>
-        -->
+        
 
 <section id="Important Dates" class="wrapper style2">            
         <div class="container">
@@ -114,7 +95,7 @@ layout: clef-default
                     	<h3>Important Dates</h3>
                     	<ul>
                         	<li>Labs registration opens: 4 November 2016</li>
-				<li>Pilot task data release: Beginning of December</li>
+				<li>Pilot task data release: 17 March 2017</li>
                         	<li>Registration closes: 21 April 2017</li>
 				<li>End of the Evaluation Cycle: 5 May 2017</li>
                         	<li>Submission of Participant Papers [CEUR-WS]: 26 May 2017</li>
