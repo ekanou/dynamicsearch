@@ -71,29 +71,83 @@ layout: clef-default
 
 			<p>Such engines/agents need to work with a user to ascertain their information needs, then perform their own searches to dynamically identify relevant material, which will be useful in completing a particular task. For example, consider the task of organising a wedding. There are many different things that that need to be arranged and ordered, e.g. a venue, flowers, catering, gift list, dresses, car hire, hotels, etc. Finding relevant sites and resources requires numerous searches and filtering through many documents/sites. A search agent could help to expedite the process by finding the relevant sites to visit, while a task completion engine would provide a structured interface to help complete the process.</p>
 
-			<p>In this year's Dynamic Search Task Track, the task is to generate a series of queries that a search agent would issue to a search engine, in order to compile a set of links useful for completing the task at hand. This set might be presented to the user or used for further processing by a task completion engine.</p>
+			<p>In this year's Dynamic Search Task Track, the task can be interpreted in one of two ways:
+                <ul>
+                 <li> (a) to generate a series of queries that a search agent would issue to a search engine, in order to compile a set of links useful for the user. This set might be presented to the user or used for further processing by a task completion engine.</li>
+                 <li> or, (b) to generate a series of query suggestions that a search engine would recommend to the user, and thus the suggested course of interaction.</li>
+                 </p>
 
-			<p>As a starting point, we will consider how humans source information required to complete such tasks, and use this information as a reference point for our evaluation, i.e. can we develop search agents that can generate queries that are like those posed by humans? Thus the focus of the track will be on query generation and models of querying.</p>
+			<p>As a starting point, we will consider how people look for information required to complete their work tasks, and use this information as a reference point for our evaluation, to determine if we can we develop search agents that can generate queries that are like those posed by people (or if we can provide suggestions that person would follow)? Thus the focus of the track will be on query generation and models of querying.</p>
 			</section>
 			
 			<section>
 			<h4> Task Overview </h4>
 			<ul>
-				<li>Task Description</li>
-				<li>Data Set</li>
+				<li>Task Description: Starting with an initial query for a given topic, the task is to generate a series of subsequent or related queries.</li>
+				<li>Data Set: The data used will TREC ClueWeb Part B and based on the topics from the Session Track 2014.</li>
+                <li>API: ClueWeb has been indexed using ElasticSearch, so you can assume that the search engine that the agent/person is interacting with is based on this API (see below for details on how to query the API).<li>
+                <li>Topics: A subset of 26 topics have been selected, where there was many queries issued, numerous clicks, and relevant documents i.e. interaction data. 
+                <li>Feedback: To help guide the process, also included is noisy judgements / click data, where in the case (a) the feedback data can be taken to be a classifier making decisions on the observed result lists (i.e. from what is returned by the queries issued), or in the case of (b) the feedback data can be take as clicks that the user has performed on the observed result list (i.e. given a query, you can assume that this is what the user clicks on, to help infer the next query).</li>
 			</ul>
 			</section>
 			
 			<section>
 			<h4> Submission Guidelines</h4>
-				<p>TBD</p>
+				<p>
+                    <ul>
+                        <li>For each topic, you may provide up to 5 suggested queries (topic query_no query_string) one per line. The goal is to recommend queries most like those issued by people which yield relevant information.</li>
+                    </li> And, a result list, which contains up to 50 results per topic (in TREC format). The 50 results should be based on a combination of the results retrieved by the 5 queries. It can be any combination, e.g. 30 results from query 1, 10 results from query 2, 10 from query 4, or 50 results from query 1, or 10 results from each query. The goal is to retrieve as many of the relevant documents as possible.</li>
+                <li>For each run submitted, please indicate how your method works, and what interaction data was used in the process, and how many interactions were required i.e. how many queries generated and submitted (as a number could be generated, but only 5 selected), i.e. how much effort went into finding those queries. In the (b) case, assume interaction is linear, such that a subsequent query is based on the previous interaction.</li>
+              
+                </ul>
+                 </p>
 			</section>
 			
 			<section>
 			<h4> Evaluation</h4>
-				<p>TBD</p>
+				<p>As this is a workshop/lab, we are open to different ways in which to evaluate this task. Some basic measures that we will employ are:
+                    <ul>
+                        <li>Query term overlap: how well do the query terms in the suggestions match with the terms used<li>
+                            <li>Query likelihood: how likely are the queries suggested given the model of relevance.</li>
+                    <li>Precision and Recall based measures on the set of documents retrieved.<li>
+                        <li>Suggest your own measure</li>
+                    </ul>
+                    </p>
 			</section>
 			
+            
+            <section>
+                <h4>ClueWeb API</h4>
+                <p>
+                    ClueWeb Part B was indexed in Elastic 5.3 using stemming and stopping. The default retrieval algorithm was used i.e. BM25.
+                    The Elastic Instance has been deployed onto Microsoft Azure Platform - and is supported by a Microsoft Azure Research Award.
+                    
+                    
+                </p>
+                
+                
+                
+                <p>To query the API you can send CURL request or write a script.</p>
+                    
+                    
+                   <p> curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty'</p>
+                <p>
+                    curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?pretty' -H 'Content-Type: application/json' -d '
+                    {
+                        "query" : {
+                            "match": { "body": "clueless" }
+                        },
+                        "highlight" : {
+                            "fields" : {
+                                "body" : {"type" : "plain"}
+                            }
+                        }
+                    }'
+                </p>
+                
+                <p>For more parameters that you can use, see the Elastic API documentation.
+                
+            </section>
 			
 			<!--		
                     <dl>
