@@ -150,7 +150,8 @@ layout: clef-default
                 
                 <p>To change the number of results returned, add in "size", here we request 20 results. <br>    
                    
-                    <pre><code>curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty&size=20'</code></pre></p>
+                    <pre><code>curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty&size=20'</code></pre>
+                </p>
                    
                    <p>You can also include "from" if you want to specify an offset, i.e. results for the next page.</p>
                    
@@ -159,7 +160,8 @@ layout: clef-default
                    
                    <p>To get snippets (called highlights back) for each result, then you can issue the following request.<br>
                    
-                     <pre><code>curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?pretty' -H 'Content-Type: application/json' -d '
+                     <pre><code>
+                         curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?pretty' -H 'Content-Type: application/json' -d '
                     {
                         "query" : {
                             "match": { "body": "clueless" }
