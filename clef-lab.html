@@ -130,7 +130,6 @@ layout: clef-default
                     </p>
 			</section>
 			
-            
             <section>
                 <h4>ClueWeb API</h4>
                 <p>
@@ -142,11 +141,25 @@ layout: clef-default
                 
                 
                 
-                <p>To query the API you can send CURL request or write a script.</p>
-                    
-                    
-                   <p> curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty'</p>
-                <p>
+                <p>To query the API you can send CURL request or write a script. Some examples are below.</p>
+        
+        
+                <p> To get the top ten results for the query  "clueless": 
+                    <br>   
+                
+                curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty'</p>
+                
+                <p>To change the number of results returned, add in "size", here we request 20 results. <br>    
+                   
+                   curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty&size=20'</p>
+                   
+                   <p>You can also include "from" if you want to specify an offset, i.e. results for the next page.</p>
+                   
+                   
+                   <p>You will notice that for each result returned you have several fields, "_index", "_type", "_id","_score", and  "_source", which contains "body", "title", and "spam_rank". The "_score" field is the BM25 score, the "_id" is the Clueweb TREC id, while the "spam_rank" is score
+                   
+                   <p>To get snippets (called highlights back) for each result, then you can issue the following request.<br>
+                   
                     curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?pretty' -H 'Content-Type: application/json' -d '
                     {
                         "query" : {
@@ -160,9 +173,15 @@ layout: clef-default
                     }'
                 </p>
                 
+                
+                
+                
+                
+                
+                
                 <p>For more parameters that you can use, see the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html">Elastic Search API documentation</a>.
+                </p>
                     
-                    <p>More details to come.</p>
                 
             </section>
 			
