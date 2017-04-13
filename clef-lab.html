@@ -100,8 +100,8 @@ layout: clef-default
 			<ul>
 				<li>Task Description: Starting with an initial query for a given topic, the task is to generate a series of subsequent or related queries.</li>
 				<li>Data Set: The data used will TREC ClueWeb Part B and based on the topics from the Session Track 2014.</li>
-                <li>API: ClueWeb has been indexed using ElasticSearch, so you can assume that the search engine that the agent/person is interacting with is based on this API (see below for details on how to query the API).<li>
-                <li>Topics: A subset of 26 topics have been selected, where there was many queries issued, numerous clicks, and relevant documents i.e. interaction data. 
+                <li>API: ClueWeb has been indexed using ElasticSearch, so you can assume that the search engine that the agent/person is interacting with is based on this API (see below for details on how to query the API).</li>
+                <li>Topics: A subset of 26 topics have been selected, where there was many queries issued, numerous clicks, and relevant documents i.e. interaction data. </li>
                 <li>Feedback: To help guide the process, also included is noisy judgements / click data, where in the case (a) the feedback data can be taken to be a classifier making decisions on the observed result lists (i.e. from what is returned by the queries issued), or in the case of (b) the feedback data can be take as clicks that the user has performed on the observed result list (i.e. given a query, you can assume that this is what the user clicks on, to help infer the next query).</li>
 			</ul>
 			</section>
@@ -134,8 +134,7 @@ layout: clef-default
                 <h4>ClueWeb API</h4>
                 <p>
                     ClueWeb Part B was indexed in Elastic 5.3 using stemming and stopping. The default retrieval algorithm was used i.e. BM25.
-                    The Elastic Instance has been deployed onto Microsoft Azure Platform - and is supported by a Microsoft Azure Research Award.
-                    
+                    The Elastic Instance has been deployed onto Microsoft Azure Platform - and is supported by a Microsoft Azure Research Award. Many thanks to <a href="http://zuccon.net">Prof. Zuccon</a> and his team for setting up and indexing the collection.    
                     
                 </p>
                 
@@ -156,7 +155,7 @@ layout: clef-default
                    <p>You can also include "from" if you want to specify an offset, i.e. results for the next page.</p>
                    
                    
-                   <p>You will notice that for each result returned you have several fields, "_index", "_type", "_id","_score", and  "_source", which contains "body", "title", and "spam_rank". The "_score" field is the BM25 score, the "_id" is the Clueweb TREC id, while the "spam_rank" is score
+                   <p>You will notice that for each result returned you have several fields, "_index", "_type", "_id","_score", and  "_source", which contains "body", "title", and "spam_rank". The "_score" field is the BM25 score, the "_id" is the Clueweb TREC id, while the "spam_rank" is the spam score from <a href="http://www.mansci.uwaterloo.ca/~msmucker/cw12spam/"> Waterloo Spam Rankings</a>. Documents with a spam_rank close to zero are the spammiest! Where the scale is: 0=most spammy to 99 least spammy.</p>
                    
                    <p>To get snippets (called highlights back) for each result, then you can issue the following request.<br>
                    
