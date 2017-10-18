@@ -5,16 +5,16 @@
         <ul>
             <li><a href="{{ site.baseurl }}/">Home</a></li>
             <li><a href="#Lab Overview">Lab Overview</a></li>
-            <!--<li><a href="#Proposed Tasks">Proposed Tasks</a></li>-->
+	    <li><a href="#Task 1">Task 1: Query Suggestion</a></li>
+	    <li><a href="#Task 2">Task 2: Results Composition</a></li>	    
             <li><a href="#Participation">Participation</a></li>
-            <li><a href="#Workshop Schedule">Workshop Schedule</a></li>
             <li><a href="#Important Dates">Important Dates</a></li>
             {% for page in site.pages %}
                   {% if page.title %}
                     <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                   {% endif %}
             {% endfor %}
-           <li><a href="http://clef2017-labs-registration.dei.unipd.it/" class="button special">CLEF 2017 Registration</a></li>
+           <li><a href="http://clef2018-labs-registration.dei.unipd.it/" class="button special">CLEF 2018 Registration</a></li>
         </ul>
     </nav>
 </header>
