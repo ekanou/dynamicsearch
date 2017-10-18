@@ -5,44 +5,12 @@ layout: clef-default
 <!-- Banner -->
 <section id="banner">
   	<div class="inner">
-    		<h2>CLEF 2017 Lab</h2>
+    		<h2>CLEF 2018 Lab</h2>
     		<p>Dynamic Search for Complex Tasks</p>
   	</div>
 </section>
 
 <!-- Main -->
-<section id="Workshop Schedule" class="wrapper style1">
-        <div class="container">
-            	<div class="row">
-			<section>
-            			<h3>CLEF 2017 Workshop</h3>
-				<p> The workshop will take place on Tuesday, 12/9, at 16:30. </p>
-				<table style="width:100%">
-  					<tr>
-    						<th>16:30</th>
-    						<th>Introduction, Evangelos Kanoulas</th> 
-  					</tr>
-					<tr>
-						<th>16:40</th> 
-						<th> Position paper: An Automatic Procedure for Generating Datasets for Conversational Recommender Systems, Annalina Caputo </th>
-					</tr>
-					<tr>
-						<th>16:50</th>
-						<th>Panel discussion, Nicholas Belkin, Ian Soboroff, Nicola Ferro, Leif Azzopardi, Guido Zuccon, Annalina Caputo</th>
-					</tr>
-					<tr>
-						<th>17:50</th>
-						<th>Pilot Task, Leif Azzopardi, U. of Strathclyde</th>
-					</tr>
-					<tr>
-						<th>18:10</th>
-						<th>Participating teams, Evangelos Kanoulas, U. of Amsterdam</th>
-					</tr>
-				</table>
-			</section>
-		</div>
-	</div>
-</section>
 
 <section id="Lab Overview" class="wrapper style1">
         <div class="container">
@@ -60,197 +28,109 @@ layout: clef-default
 </section>
 
 <section id="Objectives" class="wrapper style2">
-        <div class="container">
-            	<div class="row">
-			<section>
-				<h3>Lab Overview</h3>
-				<p>The present lab attempts to bridge the batch TREC-style evaluation methodology and the Interactive Information Retrieval evaluation methodology, with the goal of evaluating system performance over an <strong>entire session</strong>, keeping the “user” in the loop, but at the same time leading to reusable test collections.</p>
-				
-				<h3>Objectives</h3>
-		    		<p>The <b>objective</b> of the lab is threefold:</p>
-                    		<ol>
-                        	<li>to produce the methodology and algorithms that will lead to a <em>dynamic test collection</em> by simulating the users</li>
-                        	<li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at <em>different stages of a session</em>, and a good ranking for the overall session</li>
-                        	<li>to develop algorithms that can provide an optimal ranking <em>throughout a user's session</em>.</li>
-                    		</ol>
-			</section>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <section>
+	<h3>Lab Overview</h3>
+	<p>The present lab attempts to bridge the batch TREC-style evaluation methodology and the Interactive Information Retrieval evaluation methodology, with the goal of evaluating system performance over an <strong>entire session</strong>, keeping the “user” in the loop, but at the same time leading to reusable test collections.</p>
+	
+	<h3>Objectives</h3>
+	<p>The <b>objective</b> of the lab is threefold:</p>
+        <ol>
+          <li>to produce the methodology and algorithms that will lead to a <em>dynamic test collection</em> by simulating the users</li>
+          <li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at <em>different stages of a session</em>, and a good ranking for the overall session</li>
+          <li>to develop algorithms that can provide an optimal ranking <em>throughout a user's session</em>.</li>
+        </ol>
+      </section>
+    </div>
+  </div>
 </section>
 
-<section id="Papers" class="wrapper style1">
-     	<div class="container">
-            	<div class="row">
-			<section>
-		<h3>Paper Submission</h3>
-                <p>The focus of this year's workshop will be the evaluation of <em>interactive information retrieval algorithms</em>. We solicit the submission of two types of papers: (a) position papers, and (b) data papers.</p>
-					<ol>
-						<li><em>Position papers</em> focusing on evaluation methodologies for assessing the quality of search algorithms with the user in the loop, under two constraints: (1) any evaluation framework proposed should allow the (statistical) reproducibility of results, and (2) it should lead to a reusable benchmark collection.</li>
-						<li><em>Data Papers</em> describing test collections or data sets suitable for guiding the construction of dynamic test collections, tasks and evaluation metrics.</li>
-					</ol>
-		<p> All submissions must be in English, in <a href = "http://www.springer.com/it/computer-science/lncs/conference-proceedings-guidelines"> LNCS proceedings format </a>. Submissions should not exceed 2 pages, including references and figures. Papers will be peer-reviewed by at least 3 members of the program committee. Selection will be based on originality, clarity, and technical quality. Papers should be submitted in PDF format to the following address:  <a href = "https://easychair.org/conferences/?conf=clef2017dynse"> https://easychair.org/conferences/?conf=clef2017dynse</a></p>
-			</section>
-		</div>
-	</div>
+<section id="Task 1: Query Suggestion" class="wrapper style1">
+  <div class="container">
+    <div class="row">
+      <section>
+	<h3>Query Suggestion</h3>
+	<h4>Introduction</h4>
+	<p>Task Completion Engines and Autonomous Search Agents are now being developed to help users in acquiring information in order to make a decision and complete a search task. At the same time such Autonomous Search Agent present a potential in being used to simulate users submitting queries, which can enable the evaluation of dynamic search algorithms.</p>
+	
+	<p>Such engines/agents need to work with a user to ascertain their information needs, then perform their own searches to dynamically identify relevant material, which will be useful in completing a particular task. For example, consider the task of organising a wedding. There are many different things that that need to be arranged and ordered, e.g. a venue, flowers, catering, gift list, dresses, car hire, hotels, etc. Finding relevant sites and resources requires numerous searches and filtering through many documents/sites. A search agent could help to expedite the process by finding the relevant sites to visit, while a task completion engine would provide a structured interface to help complete the process.</p>
+	
+	<p>In this year's Dynamic Search Task Track, the task can be interpreted in one of two ways:
+          <ul>
+            <li> (a) to generate a series of queries that a search agent would issue to a search engine, in order to compile a set of links useful for the user. This set might be presented to the user or used for further processing by a task completion engine.</li>
+            <li> or, (b) to generate a series of query suggestions that a search engine would recommend to the user, and thus the suggested course of interaction.</li>
+        </p>
+	
+	<p>As a starting point, we will consider how people look for information required to complete their work tasks, and use this information as a reference point for our evaluation, to determine if we can we develop search agents that can generate queries that are like those posed by people (or if we can provide suggestions that person would follow)? Thus the focus of the track will be on query generation and models of querying.</p>
+      </section>
+      
+      <section>
+	<h4> Task Overview </h4>
+	<ul>
+	  <li>Task Description: Starting with an initial query for a given topic, the task is to generate a series of subsequent or related queries.</li>
+	  <li>Data Set: The data used will TREC ClueWeb Part B and based on the topics from the Session Track 2014.</li>
+          <li>API: ClueWeb has been indexed using ElasticSearch, so you can assume that the search engine that the agent/person is interacting with is based on this API (see below for details on how to query the API).</li>
+          <li>Topics: A subset of 26 topics have been selected, where there was many queries issued, numerous clicks, and relevant documents i.e. interaction data. </li>
+          <li>Feedback: To help guide the process, also included is noisy judgements / click data, where in the case (a) the feedback data can be taken to be a classifier making decisions on the observed result lists (i.e. from what is returned by the queries issued), or in the case of (b) the feedback data can be take as clicks that the user has performed on the observed result list (i.e. given a query, you can assume that this is what the user clicks on, to help infer the next query).</li>
+	</ul>
+      </section>
+      
+      <section>
+	<h4> Submission Guidelines</h4>
+	<p>
+          <ul>
+            <li>For each topic, you may provide up to 5 suggested queries (topic query_no query_string) one per line. The goal is to recommend queries most like those issued by people which yield relevant information.</li>
+            <li> And, a result list, which contains up to 50 results per topic (in TREC format). The 50 results should be based on a combination of the results retrieved by the 5 queries. It can be any combination, e.g. 30 results from query 1, 10 results from query 2, 10 from query 4, or 50 results from query 1, or 10 results from each query. The goal is to retrieve as many of the relevant documents as possible.</li>
+            <li>For each run submitted, please indicate how your method works, and what interaction data was used in the process, and how many interactions were required i.e. how many queries generated and submitted (as a number could be generated, but only 5 selected), i.e. how much effort went into finding those queries. In the (b) case, assume interaction is linear, such that a subsequent query is based on the previous interaction. You can submit this report in the participants notebook paper.</li>
+            
+          </ul>
+        </p>
+      </section>
+      
+      <section>
+	<h4> Evaluation</h4>
+	<p>As this is a workshop/lab, we are open to different ways in which to evaluate this task. Some basic measures that we will employ are:
+          <ul>
+            <li>Query term overlap: how well do the query terms in the suggestions match with the terms used</li>
+            <li>Query likelihood: how likely are the queries suggested given the model of relevance.</li>
+            <li>Precision and Recall based measures on the set of documents retrieved.</li>
+            <li>Suggest your own measure: how to measure the usefulness and value of queries is a rather open question. So how can we evaluate how good a set of queries are in relation to completing a particular task?</li>
+          </ul>
+        </p>
+      </section>
+      
+    </div>
+  </div>
 </section>
 
-<section id="Important Dates for Paper Submission" class="wrapper style2">            
-        <div class="container">
-            	<div class="row">
-                    	<h3>Important Dates for Paper Submission</h3>
-                    	<ul>
-                        	<li>Labs registration opens: 4 November 2016</li>
-				<li>Registration closes: 21 April 2017</li>
-                        	<li>Submission of Papers [CEUR-WS]: 26 May 2017</li>
-                        	<li>Notification of Acceptance Papers [CEUR-WS]: 16 June 2017</li>
-                        	<li>Camera Ready Copy of Papers [CEUR-WS]: 3 July 2017</li>
-                    	</ul>
-            	</div>
-        </div>
-</section>
 
-<section id="Pilot Task" class="wrapper style1">
-     	<div class="container">
-            	<div class="row">
-			<section>
-			<h3>Pilot Task</h3>
-			<h4>Introduction</h4>
-			<p>Task Completion Engines and Autonomous Search Agents are now being developed to help users in acquiring information in order to make a decision and complete a search task. At the same time such Autonomous Search Agent present a potential in being used to simulate users submitting queries, which can enable the evaluation of dynamic search algorithms.</p>
-
-			<p>Such engines/agents need to work with a user to ascertain their information needs, then perform their own searches to dynamically identify relevant material, which will be useful in completing a particular task. For example, consider the task of organising a wedding. There are many different things that that need to be arranged and ordered, e.g. a venue, flowers, catering, gift list, dresses, car hire, hotels, etc. Finding relevant sites and resources requires numerous searches and filtering through many documents/sites. A search agent could help to expedite the process by finding the relevant sites to visit, while a task completion engine would provide a structured interface to help complete the process.</p>
-
-			<p>In this year's Dynamic Search Task Track, the task can be interpreted in one of two ways:
-                <ul>
-                 <li> (a) to generate a series of queries that a search agent would issue to a search engine, in order to compile a set of links useful for the user. This set might be presented to the user or used for further processing by a task completion engine.</li>
-                 <li> or, (b) to generate a series of query suggestions that a search engine would recommend to the user, and thus the suggested course of interaction.</li>
-                 </p>
-
-			<p>As a starting point, we will consider how people look for information required to complete their work tasks, and use this information as a reference point for our evaluation, to determine if we can we develop search agents that can generate queries that are like those posed by people (or if we can provide suggestions that person would follow)? Thus the focus of the track will be on query generation and models of querying.</p>
-			</section>
-			
-			<section>
-			<h4> Task Overview </h4>
-			<ul>
-				<li>Task Description: Starting with an initial query for a given topic, the task is to generate a series of subsequent or related queries.</li>
-				<li>Data Set: The data used will TREC ClueWeb Part B and based on the topics from the Session Track 2014.</li>
-                <li>API: ClueWeb has been indexed using ElasticSearch, so you can assume that the search engine that the agent/person is interacting with is based on this API (see below for details on how to query the API).</li>
-                <li>Topics: A subset of 26 topics have been selected, where there was many queries issued, numerous clicks, and relevant documents i.e. interaction data. </li>
-                <li>Feedback: To help guide the process, also included is noisy judgements / click data, where in the case (a) the feedback data can be taken to be a classifier making decisions on the observed result lists (i.e. from what is returned by the queries issued), or in the case of (b) the feedback data can be take as clicks that the user has performed on the observed result list (i.e. given a query, you can assume that this is what the user clicks on, to help infer the next query).</li>
-			</ul>
-			</section>
-			
-			<section>
-			<h4> Submission Guidelines</h4>
-				<p>
-                    <ul>
-                        <li>For each topic, you may provide up to 5 suggested queries (topic query_no query_string) one per line. The goal is to recommend queries most like those issued by people which yield relevant information.</li>
-                    	<li> And, a result list, which contains up to 50 results per topic (in TREC format). The 50 results should be based on a combination of the results retrieved by the 5 queries. It can be any combination, e.g. 30 results from query 1, 10 results from query 2, 10 from query 4, or 50 results from query 1, or 10 results from each query. The goal is to retrieve as many of the relevant documents as possible.</li>
-                	<li>For each run submitted, please indicate how your method works, and what interaction data was used in the process, and how many interactions were required i.e. how many queries generated and submitted (as a number could be generated, but only 5 selected), i.e. how much effort went into finding those queries. In the (b) case, assume interaction is linear, such that a subsequent query is based on the previous interaction. You can submit this report in the participants notebook paper.</li>
-              
-                </ul>
-                 </p>
-			</section>
-			
-			<section>
-			<h4> Evaluation</h4>
-				<p>As this is a workshop/lab, we are open to different ways in which to evaluate this task. Some basic measures that we will employ are:
-                    <ul>
-                        <li>Query term overlap: how well do the query terms in the suggestions match with the terms used</li>
-                            <li>Query likelihood: how likely are the queries suggested given the model of relevance.</li>
-                    <li>Precision and Recall based measures on the set of documents retrieved.</li>
-                        <li>Suggest your own measure: how to measure the usefulness and value of queries is a rather open question. So how can we evaluate how good a set of queries are in relation to completing a particular task?</li>
-                    </ul>
-                    </p>
-			</section>
-			
-            <section>
-                <h4>ClueWeb API</h4>
-                <p>
-                    ClueWeb Part B was indexed in Elastic 5.3 using stemming and stopping. The default retrieval algorithm was used i.e. BM25.
-                    The Elastic Instance has been deployed onto Microsoft Azure Platform - and is supported by a Microsoft Azure Research Award. Many thanks to <a href="http://zuccon.net">Prof. Zuccon</a> and his team for setting up and indexing the collection.    
-                    
-                </p>
-                
-                
-                
-                <p>To query the API you can send CURL request or write a script. Some examples are below.</p>
-        
-        
-                <p> To get the top ten results for the query  "clueless": 
-                    <br>   
-                
-                <pre><code>curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty'</code></pre></p>
-                
-                <p>To change the number of results returned, add in "size", here we request 20 results. <br>    
-                   
-                    <pre><code>curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?q=clueless&pretty&size=20'</code></pre>
-                </p>
-                   
-                   <p>You can also include "from" if you want to specify an offset, i.e. results for the next page.</p>
-                   
-                   
-                   <p>You will notice that for each result returned you have several fields, "_index", "_type", "_id","_score", and  "_source", which contains "body", "title", and "spam_rank". The "_score" field is the BM25 score, the "_id" is the Clueweb TREC id, while the "spam_rank" is the spam score from <a href="http://www.mansci.uwaterloo.ca/~msmucker/cw12spam/"> Waterloo Spam Rankings</a>. Documents with a spam_rank close to zero are the spammiest! Where the scale is: 0=most spammy to 99 least spammy.</p>
-                   
-                   <p>To get snippets (called highlights back) for each result, then you can issue the following request.<br>
-                   
-                     <pre><code>
-                         curl -XGET '40.68.209.241:9200/clueweb12_docs/_search?pretty' -H 'Content-Type: application/json' -d '
-                    {
-                        "query" : {
-                            "match": { "body": "clueless" }
-                        },
-                        "highlight" : {
-                            "fields" : {
-                                "body" : {"type" : "plain"}
-                            }
-                        }
-                    }'</code></pre>
-                </p>
-                
-                
-                
-                
-                
-                
-                
-                <p>For more parameters that you can use, see the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html">Elastic Search API documentation</a>.
-                </p>
-                    
-                
-            </section>
-			
-			<!--		
-                    <dl>
-			<dt> Dataset: ClueWeb12B (An API to call a pre-defined retrieval algorithm will be provided to the participants) 
-                                    	<dt> Input: </dt>
-                                    	<dt>
-                                    	<ol>
-                                    	<li>Task description</li>
-                                    	<li>The first query of a user in a session</li>
-                                    	</ol>
-                                    	</dt>
-                                    	<dt>Output: Ranking of the provided set of queries.</dt>
-                                    	<dt>Evaluation Measure: Precision@1</dt>
-                                  	</dl>
--->
-		</div>
-	</div>
-</section>
-        
-
-<section id="Important Dates for Pilot Task" class="wrapper style2">            
-        <div class="container">
-            	<div class="row">
-                    	<h3>Important Dates for Pilot Task</h3>
-                    	<ul>
-                        	<li>Labs registration opens: 4 November 2016</li>
-				<li>Pilot task data release: 1 April 2017</li>
-                        	<li>Registration closes: 21 April 2017</li>
-				<li>End of the Evaluation Cycle: 5 May 2017</li>
-                        	<li>Submission of Participant Papers [CEUR-WS]: 26 May 2017</li>
-                        	<li>Notification of Acceptance Participant Papers [CEUR-WS]: 16 June 2017</li>
-                        	<li>Camera Ready Copy of Participant Papers [CEUR-WS]: 3 July 2017</li>
-                    	</ul>
-            	</div>
-        </div>
+<section id="Important Dates" class="wrapper style2">            
+  <div class="container">
+    <div class="row">
+      <h3>Important Dates</h3>
+      The overall schedule for the labs and the CEUR-WS Lab Working Notes is as follows:
+      <ul>
+	<li>Registration opens: 8 November 2017</li>
+	<li>Registration closes: 27 April 2018</li>
+	<li>End of Evaluation Cycle: 11 May 2018</li>
+	<li>Submission of Participant Papers [CEUR-WS]: 31 May 2018</li>
+	<li>Review process of participant papers: 31 May – 15 June 2018</li>
+	<li>Submission of Condensed Lab Overviews [LNCS]: 8 June 2018</li>
+	<li>Notification of Acceptance Participant Papers [CEUR-WS]: 15 June 2018</li>
+	<li>Notification of Acceptance Condensed Lab Overviews [LNCS]: 15 June 2018</li>
+	<li>Camera Ready Copy of Condensed Lab Overviews [LNCS]: 22 June 2018</li>
+	<li>Camera Ready Copy of Participant Papers and Extended Lab Overviews [CEUR-WS]: 29 June 2018</li>
+	<li>CEUR-WS Working Notes Preview for Checking by Authors and Lab Organizers: 18-24 July 2018</li>
+      </ul>		  
+      
+      The schedule for the conference and for LNCS Publication:
+      <ul>
+	<li>Submission of Long Papers/Best of Labs Papers: 7 May 2018</li>
+	<li>Submission of Short Papers: 14 May 2018</li>
+	<li>Notification of Acceptance Long/Short Papers: 8 June 2018</li>
+	<li>Camera Ready Long/Short Papers: 22 June 2018</li>
+      </ul>
+    </div>
+  </div>
 </section>
