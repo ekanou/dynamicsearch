@@ -12,19 +12,37 @@ layout: clef-default
 
 <!-- Main -->
 
-<section id="Background" class="wrapper style1">
+<section id="Timeline" class="wrapper style1">            
+  <div class="container">
+    <div class="row">
+      <h3>Timeline</h3>
+				<ul>
+					<li>Registration deadline: 27 April 2018</li>
+					<li>Training Data: 15 April 2018</li>
+					<li>Test Data: 5 May 2018</li>
+					<li>Submission deadline: 11 May 2018</li>
+				</ul>
+		</div>
+	</div>
+</section>
+			
+<section id="Background" class="wrapper style2">
   <div class="container">
     <div class="row">
       <section>
         <h3>Background</h3>
-        <p>Information Retrieval research has traditionally focused on serving the best results for a single query — so-called ad hoc retrieval. However, users typically search iteratively, refining and reformulating their queries during a session. A key challenge in the study of this interaction is the creation of suitable evaluation resources to assess the effectiveness of IR systems over sessions.</p>
-	<p> The TREC Interactive track one of the first track’s at TREC, with the goal of investigating interactive information retrieval by examining the process as well as the results. It ran for nine years, from 1994 to 2002, and led to a variety of findings: Presentation of documents matters to users, i.e., better surrogates help but clustering does not; users do not utilize relevance feedback as we might think/hope; results from “batch” studies do not necessarily apply to real-world searchers. Further, it resulted in an early standardization of the experimental design towards evaluating interactive information retrieval systems. However, the track did not lead to a reusable test collection methodology.</p>
-	<p> The High Accuracy Retrieval of Documents (HARD) track followed the Interactive track, with the primary focus on single-cycle user-system interactions. These interactions were embodied in clarification forms which could be used by retrieval algorithms to elicit feedback from assessors. The track attempted to further standardize the retrieval of interactive algorithms, however it also did not lead to a reusable collection, in the sense that new retrieval algorithms might not have received the same clarification forms as those participating in the experiment, had they interacted with the searchers.</p>
-	<p> The TREC Session Track, which ran from 2010 through 2014, had always had two primary goals: (1) to test whether systems can improve their performance for a given query by using previous user interactions with a retrieval system (including previous queries, clicks on ranked results, dwell times, etc.), and (2) to evaluate system performance over an entire query session instead of a single query. However, it only produced test collections to evaluate  the first goal, given that the second one required a dynamic test collection, where users react upon the results returned by a retrieval system.</p>
-	<p>In 2015 the TREC Tasks track was introduced to test whether systems upon a user’s query could understand the underlying information access task and provide documents for all possible subtasks as a way to evaluate the second goal of the Session track. However, this stripped out the task from any user interactions and the dynamics of any such collection.</p>
-      </section>
-    </div>
-  </div>
+        <p>Information Retrieval (IR) research has traditionally focused on serving the best results for a single query — so-called ad hoc retrieval. However, users typically search iteratively, refining and reformulating their queries during a session. A key challenge in the study of this interaction is the creation of suitable evaluation resources to assess the effectiveness of retrieval systems over sessions. The TREC Session and Tasks tracks attempted to approach this problem. The same did long time ago the TREC Interactive track. None of the above managed to produce a reusable test collection to evaluate the entire sessions of a conversation between a user and a machine. The problem remains open. 
+				</p>
+				<p>It has become urgent for the community, and especially forums such as TREC, CLEF, NTCIR to put a focus on and provide such a setup that will put IR at the frontline in developing dynamic systems that better fit the IR needs. The Dynamic Search Lab attempts to construct such reusable test collections and metrics that will allow the development of dynamic search algorithms. The objective of the lab is threefold: 
+					<ul>
+						<li>to produce the methodology and algorithms that will lead to a dynamic test collection by simulating the users,</li>
+						<li>to understand and quantify in terms of evaluation measures what constitutes a good ranking of documents at different stages of a session, and a good overall session</li>
+						<li>to develop algorithms that can provide an optimal ranking throughout a session.</li>
+					</ul>
+				</p>
+			</section>
+		</div>
+	</div>
 </section>
 
 <section id="Lab Overview" class="wrapper style2">
@@ -32,7 +50,7 @@ layout: clef-default
     <div class="row">
       <section>
 	<h3>Lab Overview</h3>
-	<p>The present lab attempts to bridge the batch TREC-style evaluation methodology and the Interactive Information Retrieval evaluation methodology, with the goal of evaluating system performance over an <strong>entire session</strong>, keeping the “user” in the loop, but at the same time leading to reusable test collections.</p>
+	<p>The .</p>
 	
 	<h3>Objectives</h3>
 	<p>The <b>objective</b> of the lab is threefold:</p>
