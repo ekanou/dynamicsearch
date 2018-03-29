@@ -49,20 +49,31 @@ layout: clef-default
 			<li> <strong>Q-agent:</strong> The 2018 DynSe Lab will consider the development of effective question agents. These agents can be viewed either as interactive query recommendation systems or as user simulators.</li>
 		</ul>
 		</p>
-		<p> The tasks of the Lab can be viewed in the figure below: the development of a Q-agent that produces queries to be submitted to a given retrieval system, and the development of a system that composes the results of the multiple rounds of interactions between the two agents into a single ranking.
-	</p>
+		<p> The tasks of the Lab can be viewed in the figure below: the development of a Q-agent that produces queries to be submitted to a given retrieval system, and the development of a system that composes the results of the multiple rounds of interactions between the two agents into a single ranking.</p>
 	<img src="DynSe2018.png">
+
+<section id="Collection" class="wrapper style2">
+  <div class="container">
+		<h3>Collection and Retrieval System</h4>
+		<p>The collection that will be used in the 2018 Lab will be the New York Times corpus (https://catalog.ldc.upenn.edu/ldc2008t19). The New York Times dataset consists of articles published in New York Times from January 1, 1987 to June 19, 2007 with metadata provided by the New York Times Newsroom, the New York Times Indexing Service and the online production staff at nytimes.com. Most articles are manually summarized and tagged by professional staffs. The original form of this dataset is in News Industry Text Format (NITF). This dataset can aid the research in Document Categorization, Information Retrieval, Entity Extraction and etc.  The corpus has been indexed by Indri and a Query Language Model with Dirichlet Smoothing has been implemented on the top of the Indri index. Participants will be provided with a RESTful API to query the index (https://bitbucket.org/cvangysel/pyndri-flask)</p>
   </div>
 </section>
-
+	
+	<section id="Topics" class="wrapper style1">
+  <div class="container">
+		<h3>Topics</h4>
+		<p>The topics have been developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation</p>
+  </div>
+</section>
+	
 <section id="Task 1" class="wrapper style2">
   <div class="container">
-    <div class="row">
       <section>
-	<h3>Task 1: Query Suggestion</h3>
-	<h4>Objective:</h4> Given a verbose description of a task generate a sequence of queries and their corresponding rankings of the collection.
+				<h3>Task 1: Query Suggestion</h3>
+				<h4>Objective:</h4> Given a verbose description of a task generate a sequence of queries and their corresponding rankings of the collection.
+				<h4>Submission Guidelines:</h4>
+				<h4>Evaluation:</h4>
       </section>
-    </div>
   </div>
 </section>
 
@@ -70,8 +81,10 @@ layout: clef-default
   <div class="container">
     <div class="row">
       <section>
-	<h3>Task 2: Results Composition</h3>
-		<h4>Objective:</h4> Given the ranking in Task 1 merge them in a single composite ranking.
+				<h3>Task 2: Results Composition</h3>
+				<h4>Objective:</h4> Given the ranking in Task 1 merge them in a single composite ranking.
+				<h4>Submission Guidelines:</h4>
+				<h4>Evaluation:</h4>
       </section>
     </div>
   </div>
