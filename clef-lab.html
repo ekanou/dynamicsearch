@@ -71,8 +71,8 @@ layout: clef-default
       <section>
 				<h3>Task 1: Query Suggestion</h3>
 				<h4>Objective:</h4> Given a verbose description of a task generate a sequence of queries and their corresponding rankings of the collection.
-				<h4>Submission Guidelines:</h4>
-				<h4>Evaluation:</h4>
+				<h4>Submission Guidelines:</h4> Each Q-Agent is allowed to go over 10 rounds of query suggestions. At each round one query is submitted to the A-Agent, and the top 10 results are collected. At the end of round 10, 100 search results will have been collected.
+				<h4>Evaluation:</h4> The Cube-Test will be the main evaluation measure, removing the temporal discounting. Other session evaluation measures will also be computed.
       </section>
   </div>
 </section>
@@ -84,7 +84,7 @@ layout: clef-default
 				<h3>Task 2: Results Composition</h3>
 				<h4>Objective:</h4> Given the ranking in Task 1 merge them in a single composite ranking.
 				<h4>Submission Guidelines:</h4>
-				<h4>Evaluation:</h4>
+				<h4>Evaluation:</h4> The nDCG@100 will be the main evaluation measure.
       </section>
     </div>
   </div>
