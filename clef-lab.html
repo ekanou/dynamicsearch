@@ -77,17 +77,24 @@ layout: clef-default
 				<h3>Task 1: Query Suggestion</h3>
 				<h4>Objective:</h4> Given a verbose description of a task (topic) generate a sequence of queries and their corresponding rankings of the collection.
 				<h4>Submission Guidelines:</h4> Each Q-Agent is allowed to go over 10 rounds of query suggestions. At each round one query is submitted to the A-Agent, and the top 10 results are collected. At the end of round 10, 100 search results will have been collected.
-				<h4>Submission Format:</h4> The lab will use TREC-style submissions. In TREC, a "run" is the output of a search system over ALL topics.
-				<p>
-				Run Format : TOPIC    QUESTION    DOCNO    RANK    SCORE    RUN
-				</p>
-				<p>TOPIC is the topic id and can be found in the released topics</p>
-				<p>QUESTION is the suggested query of this round. The question should be included into quotes, e.g. "london hotels". Each suggested query should be repeated over a maximum of 10 rows (i.e. for each one of the top 10 results obtained by submitting this query to the A-Agent.</p>
-				<p>DOCNO is the document number in the corpus</p>
-				<p>RANK is the rank of the document returned for this given round (in increasing order)</p>
-				<p>SCORE is the score of the ranking/classification algorith</p>
-				<p>RUN is an identifier/name for the system producing the run</p>
- 
+				<h4>Submission Format:</h4> The lab will use TREC-style submissions. In TREC, a "run" is the output of a search system over ALL topics. Run Format:
+				<table border="0">
+  				<tr>
+    			<th>TOPIC</th>
+    			<th>QUESTION</th>
+					<th>DOCNO</th>
+    			<th>RANK</th>
+					<th>SCORE</th>
+    			<th>RUN</th>
+  				</tr>
+				<ul>
+				<li>TOPIC is the topic id and can be found in the released topics</li>
+				<li>QUESTION is the suggested query of this round. The question should be included into quotes, e.g. "london hotels". Each suggested query should be repeated over a maximum of 10 rows (i.e. for each one of the top 10 results obtained by submitting this query to the A-Agent.</li>
+				<li>DOCNO is the document number in the corpus</li>
+				<li>RANK is the rank of the document returned for this given round (in increasing order)</li>
+				<li>SCORE is the score of the ranking/classification algorith</li>
+				<li>RUN is an identifier/name for the system producing the run</li>
+				</ul>
 				<h4>Evaluation:</h4> The measurements of runs are Cube Test, sDCG and Expected Utility; other diagnostic measures such as precision and recall may also be reported. 
 
 				<p> Cube Test is a search effectiveness measurement evaluating the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a system could gather and the time needed in the entire search process. The higher the Cube Test score, the better the IR system.</p>
@@ -105,17 +112,25 @@ layout: clef-default
       <section>
 				<h3>Task 2: Results Composition</h3>
 				<h4>Objective:</h4> Given the ranking in Task 1 merge them in a single composite ranking.
-				<h4>Submission Guidelines:</h4>
-				<h4>Submission Format:</h4> The lab will use TREC-style submissions. In TREC, a "run" is the output of a search system over ALL topics.
-				<p>
-				Run Format : TOPIC    DUMMY    DOCNO    RANK    SCORE    RUN
-				</p>
-				<p>TOPIC is the topic id and can be found in the released topics</p>
-				<p>DUMMY is a dummy column to be filled in with 0.</p>
-				<p>DOCNO is the document number in the corpus</p>
-				<p>RANK is the rank of the document returned for this given round (in increasing order)</p>
-				<p>SCORE is the score of the ranking/classification algorith</p>
-				<p>RUN is an identifier/name for the system producing the run</p>
+				<h4>Submission Guidelines:</h4> At the end of round 10, 100 search results will have been collected. These 100 results coming from 10 queries should be re-ranked in a single optimal ranking.
+				<h4>Submission Format:</h4> The lab will use TREC-style submissions. In TREC, a "run" is the output of a search system over ALL topics. Run Format:
+				<table border="0">
+  				<tr>
+    			<th>TOPIC</th>
+    			<th>DUMMY</th>
+					<th>DOCNO</th>
+    			<th>RANK</th>
+					<th>SCORE</th>
+    			<th>RUN</th>
+  				</tr>
+					<ul>
+				<li>TOPIC is the topic id and can be found in the released topics</li>
+				<li>DUMMY is a dummy column to be filled in with 0.</li>
+				<li>DOCNO is the document number in the corpus</li>
+				<li>RANK is the rank of the document returned for this given round (in increasing order)</li>
+				<li>SCORE is the score of the ranking/classification algorith</li>
+				<li>RUN is an identifier/name for the system producing the run</li>
+				</ul>
 				<h4>Evaluation:</h4> The nDCG@100 will be the main evaluation measure; other evaluation measures may be reported.
       </section>
     </div>
