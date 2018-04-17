@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<clef_dynse dataset="test" total_topic_num="50">
+      <domain name="New York Times" id="1" num_of_topics="50">
+	<topic name="Return of Klimt paintings to Maria Altmann" id="dd17-1">
+	  <description>Find information about the artwork by Austrian painter Gustav Klimt that was stolen by Nazis from its Austrian owners and subsequently returned to the rightful heir, Maria Altmann.</description>
+	  <narrative>This topic follows developments in the case of six specific paintings stolen by the Nazis during WWII.  The stolen paintings were given to a relative of the artist (Gustav Klimt), who in turn gave them to the Austrian government. Maria Altmann, heir of the original owners and in her 90s and living in California, was able to reclaim the art after a lengthy battle in U.S. and Austrian courts.   Information about Ms. Altmann’s legal pursuit, which went all the way to the U.S. Supreme Court; the resistance by the Austrian Government to turning over the paintings; and the final agreement by both sides to an arbitrated settlement is all relevant.  I was further interested in the reasons for the subsequent sale of the paintings by Ms. Altmann. Only the six paintings that comprised the Altmann case are relevant; work by other artists and other work by Klimt that had been confiscated by the Nazis is not relevant.</narrative>
+	</topic>
+	<topic name="Who Outed Valerie Plame?" id="dd17-2">
+	  <description>Who outed covert CIA operative Valerie Plame?</description>
+	  <narrative>This topic asks who identified undercover CIA operative Valerie Plame to newspaper columnist Robert Novak, who published her name and Agency association in his column.  All references to possible sources of the information given to Mr. Novak is relevant, including both journalists and officials within the Bush administration.  Ultimately, Novak’s sources were identified as Richard Armitage, a State Dept. deputy and White House official Karl Rove.   The indictment of Scooter Libby, VP Cheney’s chief of staff is relevant.  Libby was ultimately convicted of perjury in his testimony to a grand jury and to FBI investigators regarding how he learned Ms. Plame’s identity and to whom he divulged it.  The entire scenario played out over 2-plus years while a special prosecutor, Patrick Fitzgerald, pursued the source(s) of the leak.   Information about the underlying reasons for the leak, allegedly to justify a flawed rationale for the Iraq invasion; and legal battles over freedom of the press and subpoenas for journalists’ testimony and notes, are not relevant.</narrative>
+	</topic>
+	<topic name="First Women's Bobsleigh Debut 2002 Olympics" id="dd17-3">
+	  <description>Find information on the women"s bobsleigh debut at the 2002 Winter Olympics</description>
+	  <narrative>Information on the debut of the women"s bobsleigh event at the 2002 Winter Olympics is relevant, as is Americans Flowers and Bakken winning gold.  Information on the first African American to win gold is relevant.  Information on other Olympic years or their events are not relevant.  Skeleton event is not relevant.</narrative>
+	</topic>
+	<topic name="Origins Tribeca Film Festival" id="dd17-4">
+	  <description>Why was the Tribeca Film Festival started and who are the founders?</description>
+	  <narrative>I am interested in the origins of the Tribeca Film Festival and the identities of the founders.  Only information on the film festival is relevant.  Information on Tribeca Enterprises, also founded by de Niro, Rosenthal, and Hatkoff, and its branded entertainment and media companies, was not relevant.  Snippets that identified de Niro, Rosenthal, and/or Hatkoff as "founders" were judged key.  Snippets that alluded to the founders using terms such as "brainchild" were judged as highly relevant.  Snippets that specifically stated that the festival was started to revitalize Lower Manhattan after 9/11 were key.  Snippets that simply tied the start of the festival to 9/11 without specifying an economic cause were judged as relevant.  Allusions to an economic reason for the festival were judged as highly relevant.</narrative>
+	</topic>
+	<topic name="Benazir Bhutto's legal problems" id="dd17-5">
+	  <description>Benazir Bhutto, Pakistan"s prime minister, was convicted of corruption and misuse of power.</description>
+	  <narrative>This topic is about how Pakistan Prime Minister Benazir Bhutto was accused of misdeeds and dismissed from her office twice. Finally, one court convicted her of money laundering, but dropped the penalty, while another convicted her of corruption and misuse of power and sentenced her to five years in prison. She fled the country, however, spent nine years in self-imposed exile, and then returned to run in an election, never serving any jail time.</narrative>
+	</topic>
+	<topic name="Dwarf Planets" id="dd17-6">
+	  <description>What is a dwarf planet and which celestial bodies are considered dwarf planets?</description>
+	  <narrative>I wanted to learn the definitions of planets and dwarf planets, and I wanted to learn which celestial bodies became classified as dwarf planets.  The specific definitions were relevant and I judged them based on their specificity.  Any discussion of Pluto being "downgraded" to a dwarf planet also was relevant as was information on Eris/Xena and Ceres being reclassified as dwarf planets.  Specific information on the International Astronomical Union"s definition was key; debate leading up to the issuance of the definition was highly relevant.  Data on a museum and planetarium"s demotion of Pluto prior to the release of the officially recognized definition of dwarf planets was judged highly relevant.  Information on brown, red, and white dwarfs was not relevant.  General information on the discovery of the Kuiper Belt and "planet-like" bodies found there was not relevant.  A gray area was an asteroid named Eros; I never saw any information that indicated that "Eros" was an alternate spelling for "Eris," one of the dwarf planets, and so references to "Eros" were not relevant.</narrative>
+	</topic>
+	<topic name="Warsaw Pact Dissolves" id="dd17-7">
+	  <description>What caused the dissolution of the Warsaw Pact?</description>
+	  <narrative>This topic examines the multi-faceted reasons for the dissolution of the Warsaw Pact.  One sub-topic addressed the varying perspectives of the East European members, including impetuses for national autonomy, economic revival, and political freedom.  The second sub-topic considered the Soviet reaction to those developments.   While Mikhail Gorbachev had encouraged the European Pact members to loosen economic and political constraints within their countries, he did not foresee or want the dissolution of the military alliance.  Overtaken by rapid evolution of events, including the fall of the Berlin wall, the reunification of Germany, and the prospect of Pact members becoming part of NATO, the Soviet Union acceded to the inevitable.  Warsaw Pact member states formally ended their multi-national alliance on March 31, 1991. Developments in Eastern Europe beyond those affecting the status of the Warsaw Pact, simultaneous negotiations between NATO and the Pact for conventional arms reduction, Gorbachev’s reform movement within the USSR, or reactions to any of these developments by the U.S. or Western Europe were not relevant.</narrative>
+	</topic>
+	<topic name="Concorde Crash" id="dd17-8">
+	  <description>I am seeking information on Air France"s lawsuit against Continental Airlines following the Concorde crash in July 2000.</description>
+	  <narrative>Articles on the possibility that a suspect metal strip left on the runway, without mentioning Continental were not relevant. Articles on the possibility that debris left on the runway by a Continental aircraft led to the crash were relevant, even though the lawsuit was not mentioned.</narrative>
+	</topic>
+	<topic name="Grenada-Cuba connections" id="dd17-9">
+	  <description>Find connections between Grenada and Cuba, including the U.S. invasion of Grenada in 1983.</description>
+	  <narrative>Any interaction between Grenada and Cuba is of interest. The U.S. invasion, or intervention, or military expedition is of interest because it was prompted by the fear of Cuban influence and activities in Grenada.</narrative>
+	</topic>
+	<topic name="Leaning tower of Pisa Repairs" id="dd17-10">
+	  <description>Find information on the closing of the Leaning Tower of Pisa for repairs</description>
+	  <narrative>Information on the closing of the tower as well as the impact on tourism is relevant.  Information on the repair process including plans, suggestions and actual repairs is relevant.  Information on the goals for the future of the tower due to the repairs is relevant.</narrative>
+	</topic>
+	<topic name="Zebra mussel Hudson River" id="dd17-11">
+	  <description>Find information on the zebra mussel infestation in the Hudson River, New York</description>
+	  <narrative>Information on the zebra mussel discovery and its habitat/territory in the Hudson River is relevant.  The ecosystem or environmental impact is relevant.  Control measures are relevant.  Mussels found in other waterways of New York, the US or world are not relevant. Disruption to New York water supply from the Hudson is relevant.</narrative>
+	</topic>
+	<topic name="Dental implants" id="dd17-12">
+	  <description>Find information about dental implants, a permanent way to replace lost teeth, which were introduced in 1987.</description>
+	  <narrative>Dental implants, a permanent alternative to dentures or bridges, have increased in popularity since introduction in the late 1980s.  The biggest problem with them has been that they are quite expensive. There was an issue with them at one time related to a drug for osteoporosis and bone loss that caused death of bone in the jaw as a side effect. Patients worried because experts said that invasive procedures like dental implants could set off this bone loss.</narrative>
+	</topic>
+	<topic name="Albania pyramid scheme VEFA" id="dd17-13">
+	  <description>Find any information on the Albanian pyramid scheme VEFA and its creator, Vehbi Almacaj.</description>
+	  <narrative>VEFA was the largest of the pyramid schemes that preyed on the Albanian people. I am interested in any background on Vehbi Almacaj, who created the scheme, and what became of him. I also want to know any details about the VEFA scheme itself, such as what it promised people, where its money came from, who supported it, etc.</narrative>
+	</topic>
+	<topic name="Montserrat eruption effects" id="dd17-14">
+	  <description>Find information on effects of the 1995-97 volcanic eruptions on the Caribbean island of Montserrat</description>
+	  <narrative>Effects include loss of life, property damage, and the spread of volcanic ash and rocks. Displacement of residents and institutions are relevant effects, as well as psychological stress. Also relevant are factors that contributed to the eruptions" effects, such as a lessening of vigilance and countries" attitudes and rulings concerning Montserrat refugees.</narrative>
+	</topic>
+	<topic name="arik afek yair klein link" id="dd17-15">
+	  <description>Find any possible link between arms dealer Yair Klein and businessman Arik Afek.</description>
+	  <narrative>A document that includes both men"s names would be relevant. However, any information on the background or activities of either Arik Afek or Yair Klein individually would be of interest because it may indicate a possible connection between the two men.</narrative>
+	</topic>
+	<topic name="Eggs actually are good for you" id="dd17-16">
+	  <description>Looking for scientific studies that show that eggs are actually good for you.</description>
+	  <narrative>For decades scientists recommended limiting eggs from the diet, despite their nutritional benefits, because the food is high in cholesterol. A relevant document includes information from scientific studies showing that eggs, in fact, don"t raise blood serum cholesterol. Relevant documents may include relevant information about eggs developed with Omega-3 oil to help the heart.</narrative>
+	</topic>
+	<topic name="Nancy Pelosi election as Speaker of the House" id="dd17-17">
+	  <description>Find information on the election of Nancy Pelosi to the position of Speaker of the House</description>
+	  <narrative>Articles on the election of Nancy Pelosi to the position of Speaker of the House are relevant.  Information on her presumptive expected election and incoming to the position are relevant.  Information on her assumption and first day as speaker are relevant.  Information on her performance, activities etc. as Speaker post election (other than first day assumption) are not relevant.  Articles on other Congressional positions held are not relevant.</narrative>
+	</topic>
+	<topic name="Celebration of 50th Anniversary of Golden Gate Bridge" id="dd17-18">
+	  <description>How was the 50th Anniversary of the Golden Gate Bridge celebrated?</description>
+	  <narrative>I am interested in anything about the events related to the 50th Anniversary celebrations of San Francisco"s Golden Gate Bridge, specifically:  the date, features of the event, costs, safety concerns for the structurally integrity of the bridge, and the crowd size.</narrative>
+	</topic>
+	<topic name="Antioxidant food supplements" id="dd17-19">
+	  <description>Find information that covers health benefits from antioxidants in supplements and foods and beverages.</description>
+	  <narrative>Relevant documents reflect the vastly differing scientific opinions about the effectiveness of antioxidants in vitamin supplements and in foods. While some studies contend vitamin supplements E and Beta Carotene fight disease and help protect against heart ailments, newer studies clearly undercut these claims.Newer studies also tout the value of antioxidants in green tea and wine.</narrative>
+	</topic>
+	<topic name="Elizabeth Edwards Cancer" id="dd17-20">
+	  <description>Find information on Elizabeth Edwards cancer diagnosis, treatment  and progression of the disease.</description>
+	  <narrative>Articles on Elizabeth Edwards" diagnosis of cancer and its spread are relevant.  Articles on the treatment and lack of a cure for Ms Edwards are relevant. Articles on cancer and John Edwards campaign are not relevant unless they address Ms Edwards" cancer in some way.</narrative>
+	</topic>
+	<topic name="Mega Borg Oil Spill" id="dd17-21">
+	  <description>What was the Mega Borg oil spill?</description>
+	  <narrative>I am interested in anything having to do with the explosions on the Mega Borg that caused an oil spill off the coast of Texas.</narrative>
+	</topic>
+	<topic name="Playstation 2 Console Sales and Prices" id="dd17-22">
+	  <description>Find information on the Sale of Playstation 2 consoles including volume and prices.</description>
+	  <narrative>Only information on the model Playstation 2 console are relevant.  Relevant articles must include either sale prices, price reductions or volume of sales in either the number of consoles sold or US dollar or Japanese Yen amounts.  Articles on games or other accessories for the Playstation 2 console are not relevant.  Information on shortage of stock or shipping timelines is not relevant.  Articles on other models of the Playstation are not relevant.</narrative>
+	</topic>
+	<topic name="USAF 1st Lt. Flinn discharged" id="dd17-23">
+	  <description>Why was USAF 1st LT Kelly Flinn, the first female B52 bomber pilot, discharged from the Air Force?</description>
+	  <narrative>Relevant documents will include reasons why the first female B52 bomber pilot, USAF 1stLt Kelly Flinn was discharged from the service.   She had an affair with a married civilian whose wife was an enlisted member in Lt Flinn’s unit, lied about it, and was on the verge of a court martial proceeding when she was granted a general discharge by the Secretary of the Air Force.  I am interested understanding both Lt. Flinn’s perspective on what she did and how her case should be resolved; and the Air Force’s evolving position, which was influenced by public and Congressional interest in the case and charges of a double standard in its handling of adultery cases.  Information on the civilian involved, Marc Zigo, who spoke out publicly against Flinn after the fact, is also relevant.</narrative>
+	</topic>
+	<topic name="Melissa virus effect and monetary costs" id="dd17-24">
+	  <description>Find information on the Melissa virus" impact on systems, methods of infection, and monetary damage including the stock market.</description>
+	  <narrative>Articles discussing the Melissa virus" impact on computer systems and the method of infection are relevant.  Articles on the monetary damage including stock market rises or falls directly related to the Melissa virus are relevant.  Articles on other viruses are not relevant.  Articles must mention the Melissa virus specifically to be relevant.</narrative>
+	</topic>
+	<topic name="Last Checker Taxi Cab in NYC Auctioned" id="dd17-25">
+	  <description>What happened to the last Checker taxi cab in New York City?</description>
+	  <narrative>The last Checker taxi cab was taken off the street in 1999.  I want to know who owned the last cab and what happened to it.  Specifically, I want to know the identity of the original owner, the name of the auction house that sold the cab, how much the cab was sold for, and who bought it.</narrative>
+	</topic>
+	<topic name="New Scottish Parliament building" id="dd17-26">
+	  <description>Find information cost over-runs and delay in the building of a new Scottish Parliament building.</description>
+	  <narrative>When Scotland was given permission to elect its own representative assembly, the Scottish Parliament contracted for a new building for its seat of government.  This topic is narrowly focused on the resulting 10-year delay and significant (10 X) cost overruns.</narrative>
+	</topic>
+	<topic name="Doping for professional sports" id="dd17-27">
+	  <description>Drug testing reveals that professional athetes are using illegal drugs to enhance performance</description>
+	  <narrative>Relevant infomation includes the start of the period when drug tests uncovered performance-enhancing substances in the blood serum of pro athletes. Lance Armstrong and Barry Bonds are the most notable athletes who were found to use doping to help their performance after they denied this. Congress and  athletic drug-monitoring bodies strengthened  testing procedures and penalties.</narrative>
+	</topic>
+	<topic name="Russian Organized Crime Involvement in Skating Scandal" id="dd17-28">
+	  <description>Identify the Russian organized crime individuals involved in the 2002 Olympics skating scandal and describe the legal measures taken against them.</description>
+	  <narrative>I want to know which Russian criminal(s) were involved in the 2002 Olympics skating scandal.  What charges were leveled against them, were they arrested, and were they extradited to the U.S.?  Details on the specifics of the scandal are not relevant.  Information on others involved in fixing the skating results is also not relevant.  I want information only on the Russian criminal(s).</narrative>
+	</topic>
+	<topic name="Chefs at Michelin 3- star Restaurants" id="dd17-29">
+	  <description>Who are the chefs at Michelin 3-star restaurants?</description>
+	  <narrative>Articles must identify both the chef and the Michelin 3-star restaurant to be relevant.  Articles that stated the chef is a "3-star chef." without indicating it is a Michelin rating, are irrelevant. All references to 3-star chefs and the restaurant are relevant, including restaurants that later declined in the ratings or chefs who are deceased.</narrative>
+	</topic>
+	<topic name="Nicotine addiction" id="dd17-30">
+	  <description>After the U.S. surgeon general declared nicotine an addictive substance the federal government took action to regulate sale of cigarettes to young people.</description>
+	  <narrative>Relevant documents capture news reports on the dangers of nicotine and the actions taken by the federal government and tobacco companies to address the problem. The FDA began regulating sale of cigarettes to young people and drug firms produced nicotine patches, which have worked quite well, scientists report. Additionally, documents that explain how nicotine enters the bloodstream and acts on the brain to cause the addiction are also relevant.</narrative>
+	</topic>
+	<topic name="Implantable Heart Pump" id="dd17-31">
+	  <description>Information is needed on the manufacturers of implantable heart pumps and side effects of the devices.</description>
+	  <narrative>The implantable heart pump is sometimes referred to as a "bridge" for patients awaiting a heart transplant, as are artificial hearts.  Articles on artificial hearts or references to a "bridge," without specifying "heart pump," are not relevant.  Information on by-pass heart pumps, used during surgery, is not relevant.  Information on blood pumps is not relevant.</narrative>
+	</topic>
+	<topic name="Million Man March on Washington" id="dd17-32">
+	  <description>Who were the speakers at the Million Man March on Washington?</description>
+	  <narrative>Articles only mentioning people who were invited to speak were not relevant.  Articles mentioning people who attended the march or who supported the march were not relevant.  Documents mentioning people who were scheduled to speak were relevant.</narrative>
+	</topic>
+	<topic name="refugees on nauru" id="dd17-33">
+	  <description>Find any information on refugees that are being sent to Nauru.</description>
+	  <narrative>Australia was overwhelmed by arriving refugees so arranged to pay the Pacific island country of Nauru to house and process them. I am interested in any mention of the arrangement, the number of refugees sent to Nauru, their living conditions on Nauru, and where they eventually ended up, I would also like to know where these refugees are coming from.</narrative>
+	</topic>
+	<topic name="Rudolf Hess dies" id="dd17-34">
+	  <description>Rudolf Hess, a top aide to Adolph Hitler, died in prison in West Berlin at the age of 93.</description>
+	  <narrative>Rudolf Hess, one of Adolph Hitler"s right-hand men, killed himself in an allied prison in West Berlin by hanging himself with an electrical cord, officials said. Some questioned the report, and two autopsies were done, but this same conclusion was reached. Burial was private in his town in Bavaria, though right-wing extremists parades that day, some wearing swastikas, others in Nazi uniforms, carrying Nazi flags.</narrative>
+	</topic>
+	<topic name="Bedbug infestation rising" id="dd17-35">
+	  <description>Find information on the increase in bedbug infestations.</description>
+	  <narrative>Articles on the increase in bedbug infestations are relevant.  Articles discussing the methods whereby bedbugs travel from one structure to another i.e. clothing, suitcases, etc. are relevant.  Articles discussing how bedbugs move within a structure once infested are relevant.  Information on bedbug extermination or prevention are not relevant.</narrative>
+	</topic>
+	<topic name="Global Warming Effect on NYC Region" id="dd17-36">
+	  <description>Information is needed on the effects of global warming on the NYC region, with particular emphasis on the potential for flooding and the health implications.</description>
+	  <narrative>Flooding due to hurricanes, without relating hurricane activity to global warming or climate change was not relevant.  Flooding attributed due to melting of heavy snow was not relevant.  General predictions about the effects of climate change without reference to the New York area (includes Brooklyn and Long Island) were not relevant.  Reports of disease outbreaks without linking to global warming were not relevant.  Rising sea levels without mentioning global warming or climate change were not relevant.  Long Island beach erosion as a result of storms attributed to global warming was relevant.</narrative>
+	</topic>
+	<topic name="Gander Community Response After 9/11" id="dd17-37">
+	  <description>What did institutions and residents in the Gander, Newfoundland region do to help passengers on aircraft diverted to their community after 9/11?</description>
+	  <narrative>Assistance to passengers diverted to Gander for reasons other than 9/11 is not relevant.</narrative>
+	</topic>
+	<topic name="Iceland financial problems" id="dd17-38">
+	  <description>Find any information on Iceland"s financial problems and its efforts to deal with them.</description>
+	  <narrative>Iceland"s banking system collapsed in 2008, and I am looking for any signs of problems that led up to that crisis. Any action by Iceland to deal with its financial situation is relevant, including currency devaluation, is relevant.</narrative>
+	</topic>
+	<topic name="Munch Scream Recovered" id="dd17-39">
+	  <description>Find information on the recovery of the Scream painting by Munch.</description>
+	  <narrative>Information on the recovery and ransom of the Scream are relevant.  Information on the arrest and charging of suspects is relevant.  Information on the hunt, trial, conviction, or sentencing of suspects is not relevant.  Information on other art works by Munch are not relevant whether stolen or not.  Articles discussing books, games or films that reference the Scream are not relevant.</narrative>
+	</topic>
+	<topic name="Church of England first female priests ordained" id="dd17-40">
+	  <description>Find information on the ordination of female priests by the Church of England</description>
+	  <narrative>Articles discussing the ordination of female priests in the Church of England only are relevant.  Articles discussing the negative reactions to the ordination issue and restrictions to be put onto female priests are relevant.  Articles on all other churches or religions for or against the ordination of women as priests are not relevant.</narrative>
+	</topic>
+	<topic name="Lion King Film" id="dd17-41">
+	  <description>Find information on the film Lion King revenue in movie theaters and its soundtrack as well as the pulling and re-release of the film in movie theaters.</description>
+	  <narrative>Information on the success and revenue of the movie Lion King and its soundtrack success are relevant.  Information on the pulling and re-release of the film are relevant.  Articles discussing the play version, video or soundtrack products, or product merchandising based on the movie are not relevant.</narrative>
+	</topic>
+	<topic name="Asian tiger mosquito" id="dd17-42">
+	  <description>Find information on the Asian tiger mosquito spread in the US, diseases carried and control.</description>
+	  <narrative>Information on which US states or cities infested is relevant.  Information on the diseases carried and transmitted is relevant.  Information on control measures and effectiveness is relevant.  Information on any issues related to any other species of mosquito is not relevant.  Only articles that specifically mention the Asian tiger mosquito Aedes albopictus are relevant.</narrative>
+	</topic>
+	<topic name="Harry Connick Jr. on Broadway" id="dd17-43">
+	  <description>Identify Harry Connick Jr"s involvement in Broadway theater.</description>
+	  <narrative>Any information on Harry Connick Jr"s involvement with Broadway theaters was relevant.  (I used Wikipedia"s list of theaters considered to be "on" Broadway.)  He was involved with Broadway productions as a singer, composer, and actor.  Also relevant was any information that indicated he tried out for or was considered for a Broadway production.  Connick"s appearances elsewhere in NYC was not relevant, nor were his roles in movies.  His presence at Broadway award ceremonies, either as a performer or presenter, was not relevant.</narrative>
+	</topic>
+	<topic name="Whitney Museum Expansion to Meatpacking District" id="dd17-44">
+	  <description>Information is needed on the expansion of the Whitney Museum to a site in the Meatpacking District near the High Line.</description>
+	  <narrative>Information on the location and design of the new facility is needed. Articles on a previously planned expansion in midtown (on the East side around 75th St.) are not relevant.</narrative>
+	</topic>
+	<topic name="Exhibitions of George Nakashima Works" id="dd17-45">
+	  <description>Where has furniture created by George Nakashima been exhibited?</description>
+	  <narrative>Exhibits at antique shows, auction houses, galleries, and museums are relevant.  Documents about private collections of George Nakashima furniture were not relevant.  Exhibitions of furniture made by Mira Nakashima (his daughter) or the George Nakashima Workshop (the company run by the daughter) are not relevant. Reports about sales of George Nakashima furniture are not relevant.</narrative>
+	</topic>
+	<topic name="PGP" id="dd17-46">
+	  <description>Information is needed on PGP, the inventor, any flaws, and any concerns that the NSA might have with the software.</description>
+	  <narrative>Articles on export controls on PGP were not relevant.  Documents on work by other cryptologists which became the basis for PGP were not relevant. Articles that simply identified Phil Zimmermann, creator of PGP, as a "software designer" were not relevant.</narrative>
+	</topic>
+	<topic name="Freon-12" id="dd17-47">
+	  <description>Information  is needed on the phase-out of Freon-12, the coolant used in auto air conditioners and most refrigerators.</description>
+	  <narrative>Information on R-22, coolant used in home air conditioners, is not relevant. Information on Freon-12 recycling equipment is not relevant. Problems with the disposal of used electronic equipment or appliances containing PCBs are not relevant. Conference in Geneva in April 1987 to address ozone depletion is not relevant.  References to an "international conference in 1987 or a "global treaty" were not relevant. Articles discussing amendments to the Montreal Protocol were relevant. Discussions of a future meeting in Montreal to address ozone depletion was marginally relevant.</narrative>
+	</topic>
+	<topic name="defense, precautions against modern ship piracy" id="dd17-48">
+	  <description>Find information on modern-day efforts, on or off ship. to prevent ships" being boarded or captured by pirates.</description>
+	  <narrative>I"m interested in modern-day efforts to prevent or counter piracy at sea carried out for monetary gain, such as stealing money, cargo, or other contents of a ship; or stealing the ship itself. Relevant items include on-board defenses against being boarded, re-routeing ships to avoid dangerous areas, area patrols or ship escorts, recovery of hijacked ships, or official anti-piracy policies or advice. Intercepting or interfering with a ship to prevent smuggling, pollution, mine-laying, or terrorism is not relevant. Attacks on ships during wartime or for other political reasons are not relevant. Digital piracy is not relevant.</narrative>
+	</topic>
+	<topic name="kangaroo survival" id="dd17-49">
+	  <description>Find information on factors that affect kangaroo survival.</description>
+	  <narrative>Relevant information will include dangers to kangaroos, such a traffic accidents, natural disasters, competition for food, and being hunted. Efforts to monetize kangaroos, such as harvesting them for their hides or meat, are also relevant. Restaurant menus that include kangaroo dishes are relevant. Zoos, preserves and sanctuaries for kangaroos are relevant. Tree kangaroos are relevant. I am not interested in kangaroo rats, wallabies, wallaroos, or fictional treatments of kangaroos.</narrative>
+	</topic>
+	<topic name="Shrinking ice sheet in Greenland" id="dd17-50">
+	  <description>The vast majority of environmental scientists agree that the Greenland ice sheet is shrinking at an alarming rate.</description>
+	  <narrative>While some scientists, like a Danish geologist who says the Greenland ice sheet is relatively stable or even growing, most say it is shrinking rather markedly. One expert warns that if the ice in Greenland were to melt, it would raises the worldwide sea level by 25 feet. Overall, scientists say the melting zone in Greenland increased by 16 percent from 1979 to 2002. They implicate global warming and human involvement in it.</narrative>
+	</topic>
+	
+      </domain>
+    </clef_dynse>
